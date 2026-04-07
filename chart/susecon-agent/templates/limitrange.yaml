@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: LimitRange
+metadata:
+  name: {{ include "susecon-agent.fullname" . }}-limits
+  labels:
+    {{- include "susecon-agent.labels" . | nindent 4 }}
+spec:
+  limits:
+    - type: Container
+      default:
+        memory: {{ .Values.namespace.limitRange.defaultMemory | quote }}
+        cpu: {{ .Values.namespace.limitRange.defaultCpu | quote }}
+      defaultRequest:
+        memory: {{ .Values.namespace.limitRange.defaultRequestMemory | quote }}
+        cpu: {{ .Values.namespace.limitRange.defaultRequestCpu | quote }}
+      max:
+        memory: {{ .Values.namespace.limitRange.maxMemory | quote }}
+        cpu: {{ .Values.namespace.limitRange.maxCpu | quote }}

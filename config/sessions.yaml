@@ -1,0 +1,274 @@
+sessions:
+  - id: "SC-101"
+    title: "Agentic AI on Kubernetes: Building MCP-Powered Workflows at Scale"
+    speaker: "Dr. Elena Vasquez"
+    abstract: >
+      Explore how to deploy autonomous AI agents on Kubernetes using the Model
+      Context Protocol (MCP). We cover architecture patterns for multi-tool
+      agents, memory management challenges, and how SUSE's infrastructure
+      stack keeps your agents running reliably.
+    track: "AI/ML"
+    day: "Tuesday"
+    time: "09:00"
+    room: "Hall A1"
+    tags: ["ai", "mcp", "kubernetes", "agents", "llm"]
+
+  - id: "SC-102"
+    title: "LLM Inference at the Edge: Running Models Where the Data Lives"
+    speaker: "Marcus Chen"
+    abstract: >
+      Not every inference request needs a data center. Learn how to deploy
+      quantized language models on edge nodes with k3s, leveraging swap memory
+      and GPU sharing to maximize hardware utilization on constrained devices.
+    track: "AI/ML"
+    day: "Tuesday"
+    time: "11:00"
+    room: "Hall A2"
+    tags: ["ai", "edge", "llm", "inference", "k3s"]
+
+  - id: "SC-103"
+    title: "Kubernetes Memory Management in the Age of AI Workloads"
+    speaker: "Priya Sharma"
+    abstract: >
+      AI workloads are bursty, unpredictable, and memory-hungry. This session
+      dives into Kubernetes swap support, memory QoS, and resource management
+      strategies that prevent OOM kills without over-provisioning your clusters.
+    track: "Kubernetes"
+    day: "Tuesday"
+    time: "14:00"
+    room: "Hall B1"
+    tags: ["kubernetes", "swap", "memory", "ai", "resource-management"]
+
+  - id: "SC-104"
+    title: "From ClickOps to GitOps: Fleet-Driven Cluster Management"
+    speaker: "Jeroen Knoops"
+    abstract: >
+      Stop clicking, start committing. See how SUSE's Fleet GitOps engine
+      automates multi-cluster deployments across hybrid environments, with
+      live demos of secret propagation, staged rollouts, and drift detection.
+    track: "Kubernetes"
+    day: "Wednesday"
+    time: "09:00"
+    room: "Hall B1"
+    tags: ["gitops", "fleet", "rancher", "automation", "kubernetes"]
+
+  - id: "SC-105"
+    title: "SUSE Observability: Full-Stack Visibility from Node to Namespace"
+    speaker: "Annika Lindqvist"
+    abstract: >
+      Modern platforms need modern observability. Walk through deploying
+      SUSE Observability with OpenTelemetry auto-instrumentation, building
+      topology-aware dashboards, and correlating infrastructure metrics with
+      application traces.
+    track: "Observability"
+    day: "Wednesday"
+    time: "11:00"
+    room: "Hall C1"
+    tags: ["observability", "opentelemetry", "monitoring", "tracing", "suse-observability"]
+
+  - id: "SC-106"
+    title: "Zero-Trust Kubernetes with NeuVector"
+    speaker: "David Okonkwo"
+    abstract: >
+      Security cannot be an afterthought. Learn how NeuVector provides
+      runtime container security with zero-trust network policies, behavioral
+      learning, and automated vulnerability scanning integrated into your
+      CI/CD pipeline.
+    track: "Security"
+    day: "Wednesday"
+    time: "14:00"
+    room: "Hall D1"
+    tags: ["security", "neuvector", "zero-trust", "runtime", "kubernetes"]
+
+  - id: "SC-107"
+    title: "Harvester: Hyperconverged Infrastructure for the Modern Data Center"
+    speaker: "Tomoko Sato"
+    abstract: >
+      Run VMs and containers side by side on open-source infrastructure.
+      This session covers Harvester's new VM auto-balance, live storage
+      migration, and upgrade control features announced at this conference.
+    track: "Infrastructure"
+    day: "Thursday"
+    time: "09:00"
+    room: "Hall A1"
+    tags: ["harvester", "hci", "virtualization", "infrastructure", "vm"]
+
+  - id: "SC-108"
+    title: "Building Resilient Storage with Longhorn 2.0"
+    speaker: "Rafael Costa"
+    abstract: >
+      Longhorn 2.0 brings a re-architected data plane for improved
+      performance and reliability. See benchmarks, learn about the new
+      snapshot engine, and understand how to migrate from Longhorn 1.x
+      without downtime.
+    track: "Storage"
+    day: "Thursday"
+    time: "11:00"
+    room: "Hall B2"
+    tags: ["longhorn", "storage", "persistent-volumes", "kubernetes", "csi"]
+
+  - id: "SC-109"
+    title: "Digital Sovereignty: Owning Your Cloud-Native Stack"
+    speaker: "Sophie Muller"
+    abstract: >
+      In an era of vendor lock-in and geopolitical data regulations,
+      digital sovereignty matters. Explore how open-source infrastructure
+      gives organizations true ownership of their technology decisions
+      and data residency.
+    track: "Strategy"
+    day: "Thursday"
+    time: "14:00"
+    room: "Main Stage"
+    tags: ["sovereignty", "open-source", "strategy", "compliance", "regulation"]
+
+  - id: "SC-110"
+    title: "Rancher Prime: Enterprise Kubernetes Management at Scale"
+    speaker: "James Park"
+    abstract: >
+      Managing 5 clusters is easy. Managing 500 requires Rancher Prime.
+      See new capabilities in fleet management, RBAC delegation, and
+      multi-tenant cluster provisioning for enterprise environments.
+    track: "Kubernetes"
+    day: "Tuesday"
+    time: "16:00"
+    room: "Hall B1"
+    tags: ["rancher", "enterprise", "multi-cluster", "management", "kubernetes"]
+
+  - id: "SC-111"
+    title: "MCP Servers in Production: Lessons from Large-Scale Deployments"
+    speaker: "Lisa Nguyen"
+    abstract: >
+      The Model Context Protocol is changing how AI systems interact with
+      tools and data. Hear real-world lessons from deploying MCP servers
+      at scale, including authentication patterns, rate limiting, and
+      observability best practices.
+    track: "AI/ML"
+    day: "Wednesday"
+    time: "16:00"
+    room: "Hall A1"
+    tags: ["mcp", "ai", "production", "architecture", "tools"]
+
+  - id: "SC-112"
+    title: "RKE2 Hardening: From CIS Benchmark to Production"
+    speaker: "Viktor Petrov"
+    abstract: >
+      RKE2 ships with security defaults, but production hardening goes
+      further. Walk through CIS benchmark compliance, pod security
+      standards, network policies, and audit logging configurations.
+    track: "Security"
+    day: "Thursday"
+    time: "16:00"
+    room: "Hall D1"
+    tags: ["rke2", "security", "cis", "hardening", "compliance"]
+
+  - id: "SC-113"
+    title: "AI-Powered Infrastructure Troubleshooting with SUSE Observability"
+    speaker: "Kai Johansson"
+    abstract: >
+      When your cluster misbehaves at 3 AM, you want answers fast. See how
+      SUSE Observability uses AI-driven root cause analysis to correlate
+      symptoms across metrics, logs, and traces, cutting MTTR from hours
+      to minutes.
+    track: "Observability"
+    day: "Tuesday"
+    time: "14:00"
+    room: "Hall C1"
+    tags: ["observability", "ai", "troubleshooting", "rca", "suse-observability"]
+
+  - id: "SC-114"
+    title: "Swap, Burst, Survive: Memory Elasticity for Cloud-Native AI"
+    speaker: "Dr. Amara Osei"
+    abstract: >
+      AI workloads do not fit neatly into static resource limits. This deep
+      dive covers Kubernetes swap support, cgroup v2 memory controllers,
+      and practical strategies for letting bursty workloads flex without
+      breaking your node's stability.
+    track: "Kubernetes"
+    day: "Wednesday"
+    time: "09:00"
+    room: "Hall B2"
+    tags: ["swap", "memory", "kubernetes", "ai", "cgroup", "burstable"]
+
+  - id: "SC-115"
+    title: "The SUSE Edge Stack: From Factory Floor to Satellite Orbit"
+    speaker: "Carlos Rivera"
+    abstract: >
+      Edge computing spans retail kiosks to satellites. Discover how the
+      SUSE Edge stack, including SLE Micro, k3s, and Fleet, provides a
+      unified management plane for thousands of edge sites with minimal
+      bandwidth and zero-touch provisioning.
+    track: "Edge"
+    day: "Thursday"
+    time: "09:00"
+    room: "Hall C1"
+    tags: ["edge", "k3s", "fleet", "sle-micro", "iot"]
+
+  - id: "SC-116"
+    title: "OpenTelemetry Deep Dive: Instrumentation Patterns for Kubernetes"
+    speaker: "Nina Volkov"
+    abstract: >
+      Get hands-on with OpenTelemetry in Kubernetes. Learn about init
+      container auto-instrumentation, collector pipelines, and how to
+      export traces, metrics, and logs to SUSE Observability without
+      modifying application code.
+    track: "Observability"
+    day: "Thursday"
+    time: "14:00"
+    room: "Hall C1"
+    tags: ["opentelemetry", "otel", "instrumentation", "kubernetes", "observability"]
+
+  - id: "SC-117"
+    title: "Secure Software Supply Chain with Rancher and Sigstore"
+    speaker: "Olivia Zhang"
+    abstract: >
+      Every container image has a provenance story. Learn how to implement
+      end-to-end supply chain security using Sigstore for signing, Cosign
+      for verification, and Rancher's admission policies to enforce trusted
+      images across your fleet.
+    track: "Security"
+    day: "Tuesday"
+    time: "11:00"
+    room: "Hall D1"
+    tags: ["supply-chain", "security", "sigstore", "cosign", "rancher"]
+
+  - id: "SC-118"
+    title: "Keynote: The Intelligent Enterprise — SUSE's Vision for AI Infrastructure"
+    speaker: "Dirk-Peter van Leeuwen"
+    abstract: >
+      SUSE's CEO shares the company's vision for AI-ready infrastructure,
+      from edge to data center. Hear about new product announcements,
+      strategic partnerships, and how open source is the foundation for
+      trustworthy AI.
+    track: "Keynote"
+    day: "Tuesday"
+    time: "08:00"
+    room: "Main Stage"
+    tags: ["keynote", "ai", "strategy", "suse", "vision"]
+
+  - id: "SC-119"
+    title: "Building Your First MCP Server in Rust"
+    speaker: "Hannah Mueller"
+    abstract: >
+      Rust and MCP are a powerful combination for building high-performance
+      AI tool servers. In this hands-on session, build a working MCP server
+      from scratch using the official rmcp crate, deploy it on Kubernetes,
+      and connect it to an LLM.
+    track: "AI/ML"
+    day: "Thursday"
+    time: "11:00"
+    room: "Workshop Room 1"
+    tags: ["mcp", "rust", "hands-on", "workshop", "ai"]
+
+  - id: "SC-120"
+    title: "Kubernetes Gateway API: The Future of Ingress"
+    speaker: "Ahmed Hassan"
+    abstract: >
+      Ingress is being replaced. Learn how the Kubernetes Gateway API
+      provides a more expressive, role-oriented model for routing HTTP,
+      gRPC, and TCP traffic, with live demos using Traefik and Cilium
+      as Gateway implementations.
+    track: "Kubernetes"
+    day: "Wednesday"
+    time: "14:00"
+    room: "Hall B1"
+    tags: ["gateway-api", "ingress", "traefik", "cilium", "networking"]

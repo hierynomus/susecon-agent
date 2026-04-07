@@ -1,0 +1,16 @@
+apiVersion: v2
+name: susecon-agent
+description: >
+  SUSECon Session Recommender MCP Server.
+  Demonstrates Kubernetes swap support with a deliberately memory-hungry
+  AI agent that recommends conference sessions via MCP tools.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - susecon
+  - mcp
+  - ai
+  - swap
+  - kubernetes
+  - demo

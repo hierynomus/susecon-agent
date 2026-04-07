@@ -1,0 +1,11 @@
+{{- if .Values.sessionData.create }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "susecon-agent.fullname" . }}-sessions
+  labels:
+    {{- include "susecon-agent.labels" . | nindent 4 }}
+data:
+  sessions.yaml: |
+    {{- .Files.Get "sessions.yaml" | nindent 4 }}
+{{- end }}

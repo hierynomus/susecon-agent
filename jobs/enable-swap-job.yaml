@@ -1,0 +1,96 @@
+# enable-swap-job.yaml
+#
+# A privileged Job that creates a swap file on the host and activates it.
+# This avoids SSH-ing into the node during the keynote demo.
+#
+# Prerequisites:
+#   - The kubelet must already be configured with:
+#       failSwapOn: false
+#       memorySwap:
+#         swapBehavior: LimitedSwap
+#     (via a drop-in config file — see README.md Step 3)
+#     This should be pre-staged BEFORE the demo so no kubelet restart is
+#     needed on stage.
+#
+# Usage:
+#   kubectl apply -f enable-swap-job.yaml
+#
+# To disable swap again (reset for re-running the demo):
+#   kubectl apply -f disable-swap-job.yaml
+#
+# NOTE: The Job targets a specific node via nodeSelector. Change the
+#       node name to match your "swap on" demo node.
+#
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: enable-swap
+  namespace: kube-system
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 300
+  template:
+    metadata:
+      labels:
+        app: enable-swap
+    spec:
+      # -----------------------------------------------------------
+      # Target the specific demo node where you want swap enabled.
+      # Change this to match your node name or label.
+      # -----------------------------------------------------------
+      nodeSelector:
+        kubernetes.io/hostname: "<YOUR-SWAP-NODE-NAME>"
+      hostPID: true
+      restartPolicy: Never
+      containers:
+        - name: enable-swap
+          image: busybox:1.37
+          securityContext:
+            privileged: true
+          command:
+            - nsenter
+            - "-t"
+            - "1"
+            - "-m"
+            - "-u"
+            - "-i"
+            - "-n"
+            - "--"
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              SWAP_FILE="/swapfile"
+              SWAP_SIZE="2G"
+
+              echo "=== SUSECon Swap Demo: Enabling swap ==="
+
+              # Check if swap is already active
+              if swapon --show | grep -q "$SWAP_FILE"; then
+                echo "Swap is already active on $SWAP_FILE"
+                swapon --show
+                free -h
+                exit 0
+              fi
+
+              # Create the swap file if it doesn't exist
+              if [ ! -f "$SWAP_FILE" ]; then
+                echo "Creating ${SWAP_SIZE} swap file at ${SWAP_FILE}..."
+                fallocate -l "$SWAP_SIZE" "$SWAP_FILE"
+                chmod 600 "$SWAP_FILE"
+                mkswap "$SWAP_FILE"
+                echo "Swap file created."
+              else
+                echo "Swap file already exists at $SWAP_FILE"
+              fi
+
+              # Activate swap
+              echo "Activating swap..."
+              swapon "$SWAP_FILE"
+
+              echo ""
+              echo "=== Swap is now active ==="
+              swapon --show
+              echo ""
+              free -h

@@ -1,0 +1,65 @@
+# disable-swap-job.yaml
+#
+# Companion to enable-swap-job.yaml. Disables swap and removes the swap
+# file, resetting the node for the "Phase 1: crash" part of the demo.
+#
+# Usage:
+#   kubectl apply -f disable-swap-job.yaml
+#
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: disable-swap
+  namespace: kube-system
+spec:
+  backoffLimit: 0
+  ttlSecondsAfterFinished: 300
+  template:
+    metadata:
+      labels:
+        app: disable-swap
+    spec:
+      # -----------------------------------------------------------
+      # Must target the same node as enable-swap-job.yaml
+      # -----------------------------------------------------------
+      nodeSelector:
+        kubernetes.io/hostname: "<YOUR-SWAP-NODE-NAME>"
+      hostPID: true
+      restartPolicy: Never
+      containers:
+        - name: disable-swap
+          image: busybox:1.37
+          securityContext:
+            privileged: true
+          command:
+            - nsenter
+            - "-t"
+            - "1"
+            - "-m"
+            - "-u"
+            - "-i"
+            - "-n"
+            - "--"
+            - /bin/sh
+            - -c
+            - |
+              set -e
+
+              SWAP_FILE="/swapfile"
+
+              echo "=== SUSECon Swap Demo: Disabling swap ==="
+
+              # Disable all swap
+              swapoff -a 2>/dev/null || true
+
+              # Remove the swap file
+              if [ -f "$SWAP_FILE" ]; then
+                rm -f "$SWAP_FILE"
+                echo "Removed $SWAP_FILE"
+              fi
+
+              echo ""
+              echo "=== Swap is now disabled ==="
+              swapon --show || echo "(no swap active)"
+              echo ""
+              free -h

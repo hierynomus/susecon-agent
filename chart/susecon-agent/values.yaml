@@ -1,0 +1,75 @@
+# -- Container image settings
+image:
+  repository: ghcr.io/suse/susecon-agent
+  tag: "0.1.0"
+  pullPolicy: IfNotPresent
+
+# -- Number of replicas (1 for demo)
+replicaCount: 1
+
+# -- MCP server configuration
+config:
+  # Port the MCP server listens on
+  port: 8080
+  # Log level (trace, debug, info, warn, error)
+  logLevel: info
+
+# -- Memory bloat configuration (the swap demo magic)
+memoryBloat:
+  # How many MB to allocate per tool call
+  megabytes: 512
+  # How many seconds to spread the allocation over (for dramatic effect)
+  durationSeconds: 12
+
+# -- Resource limits for the container.
+# Set memory limit LOW to trigger OOM without swap.
+# With swap enabled on the node, the pod survives by swapping.
+resources:
+  requests:
+    memory: "64Mi"
+    cpu: "100m"
+  limits:
+    # This is the key value for the demo:
+    # - Without swap: pod gets OOM-killed when RSS exceeds this limit
+    # - With swap: pod pages excess memory to swap and survives
+    memory: "256Mi"
+    cpu: "500m"
+
+# -- Service configuration
+service:
+  type: ClusterIP
+  port: 8080
+
+# -- Session catalog ConfigMap
+# The sessions.yaml file is mounted from a ConfigMap.
+# You can override the default sessions by providing your own data.
+sessionData:
+  # If true, create ConfigMap from the embedded sessions.yaml
+  create: true
+  # Override: name of an existing ConfigMap to use instead
+  existingConfigMap: ""
+
+# -- Namespace resource constraints
+# These exist to demonstrate WHY swap is needed:
+# "We can't just raise the pod's memory limit — the namespace has a budget."
+namespace:
+  # ResourceQuota: total memory budget for the entire namespace
+  quota:
+    requestsMemory: "512Mi"
+    limitsMemory: "512Mi"
+    requestsCpu: "1"
+    limitsCpu: "2"
+  # LimitRange: per-container maximums and defaults
+  # maxMemory is the ceiling — no container can request more than this
+  limitRange:
+    defaultMemory: "256Mi"
+    defaultRequestMemory: "64Mi"
+    defaultCpu: "500m"
+    defaultRequestCpu: "100m"
+    maxMemory: "256Mi"
+    maxCpu: "1"
+
+# -- Pod-level settings
+nodeSelector: {}
+tolerations: []
+affinity: {}

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: {{ include "susecon-agent.fullname" . }}-quota
+  labels:
+    {{- include "susecon-agent.labels" . | nindent 4 }}
+spec:
+  hard:
+    requests.memory: {{ .Values.namespace.quota.requestsMemory | quote }}
+    limits.memory: {{ .Values.namespace.quota.limitsMemory | quote }}
+    requests.cpu: {{ .Values.namespace.quota.requestsCpu | quote }}
+    limits.cpu: {{ .Values.namespace.quota.limitsCpu | quote }}
