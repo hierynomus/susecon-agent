@@ -5,8 +5,8 @@ FROM registry.suse.com/bci/bci-minimal:15.7
 ARG TARGETARCH
 
 # Copy the pre-compiled binary for the target architecture
-COPY --from=binaries linux/${TARGETARCH}/harvester-dns-controller /usr/local/bin/harvester-dns-controller
+COPY --from=binaries linux/${TARGETARCH}/susecon-agent /usr/local/bin/susecon-agent
 
 USER 1001
 
-ENTRYPOINT ["/usr/local/bin/harvester-dns-controller"]
+ENTRYPOINT ["/usr/local/bin/susecon-agent"]
