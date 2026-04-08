@@ -2,7 +2,7 @@
 image:
   repository: ghcr.io/hierynomus/susecon-agent
   tag: "0.1.0"
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 # -- Number of replicas (1 for demo)
 replicaCount: 1
