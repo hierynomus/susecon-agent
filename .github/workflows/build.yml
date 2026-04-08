@@ -56,11 +56,17 @@ jobs:
       - name: Build with cross
         run: cross build --release --target ${{ matrix.target }}
 
-      - name: Upload binary
+      - name: Upload agent binary
         uses: actions/upload-artifact@v4
         with:
           name: susecon-agent-${{ matrix.arch }}
           path: target/${{ matrix.target }}/release/susecon-agent
+
+      - name: Upload backend binary
+        uses: actions/upload-artifact@v4
+        with:
+          name: susecon-backend-${{ matrix.arch }}
+          path: target/${{ matrix.target }}/release/susecon-backend
 
   build-container:
     name: 'Build & push image'
@@ -70,20 +76,32 @@ jobs:
       - name: 'Checkout'
         uses: actions/checkout@v4
 
-      - name: Download amd64 binary
+      - name: Download agent amd64 binary
         uses: actions/download-artifact@v4
         with:
           name: susecon-agent-amd64
           path: binaries/linux/amd64
 
-      - name: Download arm64 binary
+      - name: Download agent arm64 binary
         uses: actions/download-artifact@v4
         with:
           name: susecon-agent-arm64
           path: binaries/linux/arm64
 
+      - name: Download backend amd64 binary
+        uses: actions/download-artifact@v4
+        with:
+          name: susecon-backend-amd64
+          path: binaries/linux/amd64
+
+      - name: Download backend arm64 binary
+        uses: actions/download-artifact@v4
+        with:
+          name: susecon-backend-arm64
+          path: binaries/linux/arm64
+
       - name: Make binaries executable
-        run: chmod +x binaries/linux/*/susecon-agent
+        run: chmod +x binaries/linux/*/susecon-agent binaries/linux/*/susecon-backend
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3

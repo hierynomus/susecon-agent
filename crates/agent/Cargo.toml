@@ -1,0 +1,25 @@
+[package]
+name = "susecon-agent"
+version.workspace = true
+edition.workspace = true
+description = "SUSECon Session Recommender MCP Agent — Kubernetes Swap Demo"
+
+[[bin]]
+name = "susecon-agent"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+axum.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+rmcp = { version = "1.3", features = [
+    "server",
+    "transport-streamable-http-server",
+    "schemars",
+] }
+schemars = "1"
+reqwest = { version = "0.12", features = ["json"] }

@@ -1,5 +1,6 @@
-use serde::{Deserialize, Serialize};
 use std::path::Path;
+
+use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct Session {
@@ -14,6 +15,26 @@ pub struct Session {
     pub tags: Vec<String>,
 }
 
+impl Session {
+    /// Score this session against a single keyword (case-insensitive).
+    fn keyword_score(&self, keyword: &str) -> usize {
+        let mut score = 0;
+        if self.title.to_lowercase().contains(keyword) {
+            score += 3;
+        }
+        if self.track.to_lowercase().contains(keyword) {
+            score += 2;
+        }
+        if self.tags.iter().any(|t| t.to_lowercase().contains(keyword)) {
+            score += 2;
+        }
+        if self.r#abstract.to_lowercase().contains(keyword) {
+            score += 1;
+        }
+        score
+    }
+}
+
 #[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct SessionCatalog {
     pub sessions: Vec<Session>,
@@ -22,8 +43,8 @@ pub struct SessionCatalog {
 impl SessionCatalog {
     pub fn load(path: &Path) -> anyhow::Result<Self> {
         let content = std::fs::read_to_string(path)?;
-        let catalog: SessionCatalog = serde_yaml::from_str(&content)?;
-        tracing::info!(count = catalog.sessions.len(), "Loaded sessions from catalog");
+        let catalog: Self = serde_yaml::from_str(&content)?;
+        tracing::info!(count = catalog.sessions.len(), "Loaded session catalog");
         Ok(catalog)
     }
 
@@ -31,33 +52,21 @@ impl SessionCatalog {
         let topic_lower = topic.to_lowercase();
         let keywords: Vec<&str> = topic_lower.split_whitespace().collect();
 
-        let mut scored: Vec<(usize, &Session)> = self
+        let mut scored: Vec<_> = self
             .sessions
             .iter()
-            .map(|s| {
-                let score = keywords.iter().fold(0usize, |acc, kw| {
-                    let mut s_score = 0;
-                    if s.title.to_lowercase().contains(kw) {
-                        s_score += 3;
-                    }
-                    if s.track.to_lowercase().contains(kw) {
-                        s_score += 2;
-                    }
-                    if s.tags.iter().any(|t| t.to_lowercase().contains(kw)) {
-                        s_score += 2;
-                    }
-                    if s.r#abstract.to_lowercase().contains(kw) {
-                        s_score += 1;
-                    }
-                    acc + s_score
-                });
-                (score, s)
+            .filter_map(|session| {
+                let score: usize = keywords.iter().map(|kw| session.keyword_score(kw)).sum();
+                (score > 0).then_some((score, session))
             })
-            .filter(|(score, _)| *score > 0)
             .collect();
 
         scored.sort_by(|a, b| b.0.cmp(&a.0));
-        scored.into_iter().take(max_results).map(|(_, s)| s).collect()
+        scored
+            .into_iter()
+            .take(max_results)
+            .map(|(_, s)| s)
+            .collect()
     }
 }
 

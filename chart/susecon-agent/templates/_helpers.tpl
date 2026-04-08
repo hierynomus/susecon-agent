@@ -37,4 +37,21 @@ Selector labels
 {{- define "susecon-agent.selectorLabels" -}}
 app.kubernetes.io/name: {{ include "susecon-agent.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/component: agent
+{{- end }}
+
+{{/*
+Backend fullname
+*/}}
+{{- define "susecon-agent.backendFullname" -}}
+{{- printf "%s-backend" (include "susecon-agent.fullname" .) | trunc 63 | trimSuffix "-" }}
+{{- end }}
+
+{{/*
+Backend selector labels
+*/}}
+{{- define "susecon-agent.backendSelectorLabels" -}}
+app.kubernetes.io/name: {{ include "susecon-agent.name" . }}
+app.kubernetes.io/instance: {{ .Release.Name }}
+app.kubernetes.io/component: backend
 {{- end }}

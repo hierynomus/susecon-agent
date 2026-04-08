@@ -1,0 +1,78 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "susecon-agent.backendFullname" . }}
+  labels:
+    {{- include "susecon-agent.labels" . | nindent 4 }}
+    app.kubernetes.io/component: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      {{- include "susecon-agent.backendSelectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "susecon-agent.backendSelectorLabels" . | nindent 8 }}
+      annotations:
+        # Force redeployment when ConfigMap changes
+        checksum/config: {{ include (print $.Template.BasePath "/configmap.yaml") . | sha256sum }}
+    spec:
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      containers:
+        - name: susecon-backend
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          command: ["/usr/local/bin/susecon-backend"]
+          ports:
+            - name: http
+              containerPort: {{ .Values.backend.port }}
+              protocol: TCP
+          env:
+            - name: BIND_ADDRESS
+              value: "0.0.0.0:{{ .Values.backend.port }}"
+            - name: SESSIONS_PATH
+              value: "/config/sessions.yaml"
+            - name: MEMORY_BLOAT_MB
+              value: "{{ .Values.memoryBloat.megabytes }}"
+            - name: MEMORY_BLOAT_DURATION_SECS
+              value: "{{ .Values.memoryBloat.durationSeconds }}"
+            - name: RUST_LOG
+              value: "{{ .Values.config.logLevel }}"
+          resources:
+            {{- toYaml .Values.backend.resources | nindent 12 }}
+          volumeMounts:
+            - name: sessions
+              mountPath: /config
+              readOnly: true
+          readinessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 2
+            periodSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /healthz
+              port: http
+            initialDelaySeconds: 5
+            periodSeconds: 10
+      volumes:
+        - name: sessions
+          configMap:
+            {{- if .Values.sessionData.existingConfigMap }}
+            name: {{ .Values.sessionData.existingConfigMap }}
+            {{- else }}
+            name: {{ include "susecon-agent.fullname" . }}-sessions
+            {{- end }}

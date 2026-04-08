@@ -1,21 +1,16 @@
-[package]
-name = "susecon-agent"
+[workspace]
+members = ["crates/agent", "crates/backend"]
+resolver = "2"
+
+[workspace.package]
 version = "0.1.0"
 edition = "2021"
-description = "SUSECon Session Recommender MCP Server — Kubernetes Swap Demo"
 
-[dependencies]
-rmcp = { version = "1.3", features = [
-    "server",
-    "transport-streamable-http-server",
-    "schemars",
-] }
+[workspace.dependencies]
 anyhow = "1"
 axum = "0.8"
-tokio = { version = "1", features = ["full"] }
 serde = { version = "1", features = ["derive"] }
-serde_yaml = "0.9"
 serde_json = "1"
-schemars = "1"
+tokio = { version = "1", features = ["full"] }
 tracing = "0.1"
 tracing-subscriber = { version = "0.3", features = ["env-filter"] }
