@@ -47,19 +47,19 @@ async fn recommend(
 ) -> impl IntoResponse {
     let max = request.max_results.unwrap_or(5);
 
-    // tracing::info!(
-    //     topic = %request.topic,
-    //     max_results = max,
-    //     index_mb = state.catalog_index_mb,
-    //     "recommend — loading session catalog"
-    // );
+    tracing::info!(
+        topic = %request.topic,
+        max_results = max,
+        index_mb = state.catalog_index_mb,
+        "recommend — loading session catalog"
+    );
 
-    // let rss = session_loader::load_and_index(state.catalog_index_mb, state.catalog_index_duration).await;
+    let rss = session_loader::load_and_index(state.catalog_index_mb, state.catalog_index_duration).await;
 
-    // tracing::info!(
-    //     rss_mb = format!("{rss:.1}"),
-    //     "Session catalog indexed — searching sessions"
-    // );
+    tracing::info!(
+        rss_mb = format!("{rss:.1}"),
+        "Session catalog indexed — searching sessions"
+    );
 
     let results: Vec<Session> = state
         .catalog
