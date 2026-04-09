@@ -22,6 +22,7 @@ pub struct RecommendSessionsRequest {
 
 #[derive(Debug, serde::Deserialize)]
 struct BackendSession {
+    id: String,
     title: String,
     speaker: String,
     r#abstract: String,
@@ -140,7 +141,7 @@ impl SuseConAgent {
             let _ = write!(
                 output,
                 "{}. **{}**\n   Speaker: {}\n   Track: {} | {} @ {} | Room: {}\n   {}\n   Tags: {}\n\n",
-                i + 1,
+                session.id,
                 session.title,
                 session.speaker,
                 session.track,
