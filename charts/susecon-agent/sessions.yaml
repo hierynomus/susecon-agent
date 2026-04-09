@@ -1,0 +1,2557 @@
+sessions:
+  - id: "CERTIFICATION-1429"
+    title: SUSE Certification Exams
+    speaker: "Amy Bradley, Mimi Kong"
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "13:00"
+    room: Florenc 1
+    length: 120
+    tags: ["ai"]
+
+  - id: "HOL-1430"
+    title: Demystifying Networking Configuration in SUSE Virtualization
+    speaker: Ron Terry
+    abstract: >
+      SUSE Virtualization supports a number of different mechanisms for configuring networking in the virtualization cluster. Terms like Cluster Network, Network Config, Virtual Private Cluster, VLAN, untagged network and VM network are encountered when trying to configure networking. If not properly understood in context it can be confusing what they mean and how they are used and configured in a SUSE Virtualization cluster.
+
+      This hands-on session covers what all of these networking related terms and concepts mean and how they are used when configuring networking in a SUSE Virtualization cluster. You will work with scenarios such as how to configure networking when cluster nodes have differing NIC placement and how to add new cluster nodes into a cluster and configure their networking. You will also explore the new feature of Virtual Private Clusters (VPC), introduced in tech preview starting with SUSE Virtualization 1.6.x, and gain hands-on experience configuring VPC.
+
+      By the end of the session attendees will have a good understanding of how to configure networking in a SUSE Virtualization cluster.
+    track: Hands on Lab
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "13:00"
+    room: Florenc 2
+    length: 120
+    tags: ["virtualization"]
+
+  - id: "HOL-1432"
+    title: "SUSE Linux Enterprise Server 16: Look, No Hands"
+    speaker: Zia Rehman
+    abstract: >
+      Do you want to deploy nice shiny new SLES 16 systems while enjoying a cup of coffee? Automating the deployment of SLES 16 with Agama is the answer, but you still have to make the coffee yourself!
+
+      In this hands-on session you will create an Agama profile that will be used to automate the installation of SLES 16. Once completed, simply power on the system and go and make that coffee, no human interaction required. “I have several different hardware specifications I need to deploy SLES 16 on” I hear you say. No problem, you will then create a dynamic profile that adapts to the hardware SLES is being installed on. Time for another coffee.
+    track: Hands on Lab
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "13:00"
+    room: Karlin 1
+    length: 120
+    tags: []
+
+  - id: "OVERVIEW-1156"
+    title: The Next Evolution of Virtualization is Cloud-Native
+    speaker: "Janet Wi, Alejandro Bonilla, Chris Crow"
+    abstract: >
+      "As enterprises look to modernize their virtualization environments, they face a critical challenge: how to balance cost control with innovation and operational resilience. In this session, we'll explore how leading organizations are rethinking virtualization to drive efficiency across their infrastructure.
+
+      Learn how modern virtualization—built on a cloud-native foundation—enables you to streamline operations and reduce total cost of ownership from escalating license renewals.
+
+      You'll also learn:
+
+      Why now is the time to modernize your virtualization stack
+
+      How SUSE and Portworx deliver enterprise-grade resilience and manageability at scale
+
+      Common use cases and best practices for building a modern, unified app platform"
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 2
+    length: 30
+    tags: ["kubernetes", "virtualization"]
+
+  - id: "OVERVIEW-1341"
+    title: "Beyond the Chatbot: Transforming your IT with Open, Governed, AI-Assisted Infrastructure"
+    speaker: "Sebastian Martinez Torregrosa, Daniel Rahn"
+    abstract: >
+      The IT mandate is clear: slash costs and mitigate risk while accelerating AI transformation. Yet, most organizations face an "Execution Gap," trapped between AI ambition and the need to "keep the lights on" with rigid infrastructure.
+
+      Move beyond the hype of chatbots. Join this session to discover the roadmap and the possibilities opened by AI-assisted infrastructure, a strategic framework for an Open, Governed, and Integrated intelligent IT foundation. We will explore how to enable your current heterogeneous estate into a context-aware "AI" partner that can drive TCO reduction by boosting human knowledge with intelligent, correlated visibility.
+      Discover SUSE's unique approach: AI-assisted infrastructure spanning from local Linux to the SAP environment and heterogeneous management at scale, ruled by a Human-in-the-Loop (HITL) safety model that ensures audit-proof compliance. Built on the open Model Context Protocol (MCP), it prevents vendor lock-in and enables seamless integration.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 3
+    length: 30
+    tags: ["linux-systems-management", "ai"]
+
+  - id: "OVERVIEW-1460"
+    title: Introducing SUSE Industrial Edge
+    speaker: "Erin Thompson, Rajesh Rajamani, Dylan Schuster"
+    abstract: >
+      Discover SUSE's latest tiny edge offering, built on Losant's scalable, secure, and developer-friendly Internet of Things platform. This 30-minute presentation with Erin Thompson, Dylan Schuster, and Rajesh Rajamani will cover the newly acquired enterprise IoT platform, its significance for SUSE's partners and customers, and strategies for transforming data from billions of devices and sensors into valuable, actionable insights.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 4
+    length: 30
+    tags: []
+
+  - id: "OVERVIEW-1151"
+    title: SUSE Multi-Linux Manager Automation at scale
+    speaker: "Ricardo Mateus, Johannes Hahn"
+    abstract: >
+      Managing distributed server landscapes at scale presents challenges in content consistency, configuration drift, and patch automation. This session explores the SUSE Manager 5.1 Hub Architecture as a centralized, scalable solution for content management and auto-update capabilities at scale.
+
+      We will first provide an architectural overview of the Hub architecture. Learn how to leverage Content Lifecycle Management (CLM) for content curation and Hub Online Synchronization for automatic distribution across all peripheral locations.
+
+      Recurrent actions execute scheduled updates at scale, shifting patching from reactive to proactive. Finally, we demonstrate how GitFS integration allows users to establish a reliable GitOps pipeline for SUSE Manager environments.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 1
+    length: 30
+    tags: ["linux-systems-management", "automation"]
+
+  - id: "CUSTOMER-1415"
+    title: Building a Full-Stack Enterprise Kubernetes Platform with the SUSE Rancher Suite
+    speaker: "Cleber Paiva de Souza, Natã Mourão"
+    abstract: >
+      Managing enterprise Kubernetes environments demands integrated, secure management. This session presents a real-world case study on deploying a comprehensive Kubernetes platform with the full SUSE Rancher suite. We'll showcase how Rancher Manager orchestrates clusters, streamlines operations, and enforces granular RBAC. Longhorn provides resilient persistent storage; NeuVector secures containers with runtime protection, scanning, and microsegmentation. Rancher Fleet implements GitOps for automated, declarative deployment, ensuring consistency and auditability. Cert-Manager handles automated TLS; SUSE Observability provides centralized monitoring. Attendees will learn how these integrated SUSE technologies enhance security, compliance, agility, and availability, making Kubernetes management simpler, faster, and more reliable.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 2
+    length: 30
+    tags: ["compliance"]
+
+  - id: "ROADMAP-1083"
+    title: SUSE for SAP Roadmap
+    speaker: "Andreas Jaeger, Tobias Kutning"
+    abstract: >
+      Join the SAP product management team at SUSE as they explain how SUSE powers SAP landscapes - from well-known stacks like Netweaver and HANA to new offerings like Edge Integration Cell. We'll give an overview on our solutions for SAP and explain how they ease administrators managing SAP landscapes.
+    track: Product Roadmap
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:00"
+    end_time: "12:15"
+    room: Palmovka 4
+    length: 75
+    tags: ["sap-solutions"]
+
+  - id: "CUSTOMER-1197"
+    title: "From vSphere to SUSE Virtualization: Our Path to Open Infrastructure“"
+    speaker: "Jonas Straub, Paul Dresch"
+    abstract: >
+      With the well-known pricing changes from Broadcom/VMware, we are forced to look into new hypervisor technologies/products, and in doing so we noticed SUSE Harvester/Virtualization. In this session, we will go over the path we took to set up Harvester and migrate to it. We'll cover some nice-to-haves we found, but also a few issues we ran into. To top it off, we will also talk about how we automated the setup of new VMs and introduce two new tools we developed (both are open source and available to the community) that made our lives easier.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization", "automation"]
+
+  - id: "CUSTOMER-1079"
+    title: Sit. Stay. Deploy. Teaching a Robot Dog with SUSE AI
+    speaker: Johan van Amersfoort
+    abstract: >
+      Ever wondered what the guiding dog of the future will look like? In this session, we'll show how SUSE AI and Rancher bring computer vision to life - enabling a real robot dog to recognize human gestures and perform actions in real time.
+
+      Behind the fun is serious engineering: we'll walk through how models are trained, deployed, and served using SUSE AI. We'll also show low-latency edge components running on K3s, managed by Rancher.
+
+      This session explores how edge AI, MLOps, and open infrastructure come together to make robotics smarter, faster, and easier to operate anywhere, from data center to device. It's a playful demonstration of what's possible when open source, AI, and SUSE meet at the edge and a practical look at building portable, GPU-accelerated inference pipelines for the real world.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 3
+    length: 30
+    tags: ["ai"]
+
+  - id: "TUTORIAL-1030"
+    title: "S(US)ELinux: The new default mandatory access control system"
+    speaker: Johannes Segitz
+    abstract: >
+      SUSE has been using AppArmor for a long time as a mandatory access control system. With SUSE Linux Micro (and other SLES 16-based products) we changed
+      this to SELinux. This talk will show you the basics of how SELinux works and what to expect when you move from AppArmor to SELinux.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["security"]
+
+  - id: "TUTORIAL-1093"
+    title: A Deep Dive into SUSE Rancher Cluster Provisioning
+    speaker: "Silvio Moioli, Carlos Salas"
+    abstract: >
+      Ever wondered how Rancher actually creates clusters? Or heard of Cluster API but aren't sure how it fits into Rancher's architecture? This session takes you deep inside Rancher's provisioning engine, explaining how it's built on Cluster API (CAPI), an open-source project we actively contribute to and build upon. We'll show how Rancher consumes CAPI providers to provision and manage clusters, and dive into the architectural differences between Turtles and Provisioning v2. Attendees will gain a detailed understanding of Rancher's internal workflows, controller interactions, and how CAPI enables a unified and extensible provisioning model.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "kubernetes"]
+
+  - id: "CUSTOMER-1364"
+    title: Building Digital Sovereignty at the Extreme Edge with Modular Composable Services
+    speaker: Merijn Weiss
+    abstract: >
+      Defence organisations operating in NATO-classified and mission-critical environments face extreme IT challenges: systems must remain secure, interoperable, and dependable at the Extreme Edge, even with limited connectivity and strict mission requirements. This session shows how a Modular Composable Services Architecture, built on SLE Micro, K3s, and SUSE Observability, delivers digital sovereignty and operational resilience in these demanding conditions.
+
+      Although grounded in a real NATO-aligned defence deployment, the architectural principles and lessons are broadly applicable. Any organisation seeking sovereign, open, and compliant digital infrastructure can adopt the same foundations of modularity, immutability, and declarative automation. Attendees will leave with practical guidance for building reliable edge systems that remain consistent, secure, and predictable under high-assurance and constrained operating environments.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["edge-computing"]
+
+  - id: "CUSTOMER-1399"
+    title: "Cloud Fortress: Kubernetes ecosystem hardening story"
+    speaker: "Michel HUMMEL, Pierre LORENZO"
+    abstract: >
+      If you studdied a bit about Kubernetes, you know this is complex and not that much secured by default. You probably discovered also that K8S itself is not enough: you need CNI, CSI, Ingress, load-balancer, certificates,... Etc etc...
+
+      When IT comes to governement or defense market, you have no choice than taking these topics seriously.
+
+      In this session we will introduce Cloud Fortress, Airbus Defence and Space approach to Kubernetes hardening in airgap for critical environments.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 2
+    length: 30
+    tags: ["kubernetes", "security"]
+
+  - id: "BUSINESS-1379"
+    title: EU AI Regulations and SUSE ISV partnership in Action
+    speaker: "Martina Ilieva, Sean Musch"
+    abstract: >
+      The EU AI Act is no longer theory—it's time for practical execution. Companies must now operationalize compliance to meet the European Commission's strict new requirements.
+      In this session, the SUSE ISV partner, AI&Partners, will provide specific, actionable steps to help your organization stay ahead of the curve.
+
+      We'll detail the shift required to integrate ethical AI principles and data protection into your development pipeline, ensuring compliance beyond the initial discussion phase.
+
+      We'll also present a parallel analysis of developing AI regulations in South Korea, China, and the US, offering practical guidance for global compliance teams, and explore the impact of the open-source.
+
+      We'll also share how SUSE AI product certifications and becoming a SUSE AI Ready ISV partner accelerated customer trust, leading to successful go-to-market activities and customer opportunities.
+    track: Business Insights
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 3
+    length: 30
+    tags: ["ai"]
+
+  - id: "OVERVIEW-1282"
+    title: "SUSE Telco Cloud: Addressing Diverse Telco Use Case Requirements"
+    speaker: "Tim Irnich, Timo Jokiaho"
+    abstract: >
+      Kubernetes is the de-facto standard for container orchestration. While its design is driven by the need for scalable, fault-tolerant and declarative microservices deployment, it is also very suitable for telco network Control Plane Functions (CP) responsible for signaling, session/mobility management and subscriber authentication, since their needs and design is similar to web applications.
+
+      User Plane Functions (UP), however, are responsible for forwarding user data traffic and hence significantly more coupled to the underlying physical hardware. Therefore, deploying the user plane on Kubernetes presents unique challenges that took some time to get properly addressed in Kubernetes, but also for these use cases Kubernetes offers significant flexibility and resource efficiency gains.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 4
+    length: 30
+    tags: ["cloud-infrastructure"]
+
+  - id: "CUSTOMER-1149"
+    title: CI/CD Pipeline for SUSE Linux at GE Healthcare
+    speaker: Matt Loach
+    abstract: >
+      We will go over how at GE Healthcare, we created a singular pipeline in Gitlab that allows for the automatic configuration, building, testing, and deployment of SLES operating systems to various development teams using common dependencies between them. This has allowed for huge time-savings, resource consolidation, and money saved by having this pipeline. We now have a simple pipeline page the user can build can OS image to their specification.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 1
+    length: 30
+    tags: ["devops", "automation"]
+
+  - id: "TUTORIAL-1138"
+    title: "The Green Blueprint: Architecting the Complete End-to-End SUSE Ecosystem"
+    speaker: "Alejandro Bonilla, Joshua Crater"
+    abstract: >
+      Navigating the cloud-native landscape requires more than just a container engine; it requires a cohesive strategy that spans virtualization, management, security, and data. In this session, we provide a comprehensive, high-level technical tour of the full SUSE stack in action.
+
+      We will trace the lifecycle of a deployment, starting from the infrastructure layer with Harvester and K3K, up through the cluster orchestration with Rancher Prime and RKE2. We will demonstrate how to layer on essential Day 2 operations using SUSE Security for zero-trust security and Longhorn for persistent storage. Finally, we will show how this unified foundation empowers next-generation workloads across SUSE Edge, Telco Cloud, and AI implementations. Join us to understand the "Big Picture" architecture and how to connect these powerful components into a single, resilient platform.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "kubernetes"]
+
+  - id: "BUSINESS-1337"
+    title: "Navigating the EU AI Act: What Open Source Builders and Users Must Know About Risk and Compliance"
+    speaker: "Damián Palašta, Miloš Pokrivčák"
+    abstract: >
+      The EU AI Act already shapes how AI systems—including open-source models and tools—can be developed, shared, and deployed. Yet the obligations, exemptions, and new risk categories often remain misunderstood, especially in open-source communities where development models differ fundamentally from commercial vendors.
+
+      This session clarifies when open-source AI is exempt, when obligations do apply, and how risk levels (prohibited, high-risk, limited-risk, minimal-risk) translate into real responsibilities for developers, contributors, maintainers, platform providers, and enterprise users.
+
+      Attendees will learn where the boundaries lie, which practices are allowed or prohibited, how “placing on the market” vs. “free release” matters, and how organizations can adopt compliant workflows without undermining openness or innovation. Practical examples illustrate compliance strategies, governance approaches, and common misunderstandings.
+    track: Business Insights
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 3
+    length: 30
+    tags: ["open-source", "ai"]
+
+  - id: "ROADMAP-1202"
+    title: SUSE Multi-Linux Manager and SUSE Multi-Linux Support Roadmap
+    speaker: "Benjamin Landorff, Stefan Behlert"
+    abstract: >
+      Managing all your Linux instances can be challenging - but SUSE Multi-Linux Manager can help! Join our journey toward managing any Linux, anywhere, and at any scale. Get the latest update on what's new - and features you can use. Follow our digital transformation journey. Learn how you can better understand and improve the security of your Linux portfolio. Find out how integrated we are with other SUSE offerings - like SLES for SAP, SUSE Multi-Linux Support (Liberty), and SL Micro. Hear about how customers like you are using Multi-Linux Manager.
+    track: Product Roadmap
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "12:30"
+    end_time: "13:15"
+    room: Palmovka 4
+    length: 45
+    tags: ["linux-systems-management", "compliance"]
+
+  - id: "CERTIFICATION-1444"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "13:45"
+    end_time: "15:45"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "HOL-1435"
+    title: Downstream Cluster Application Management Methods with SUSE Rancher Prime
+    speaker: Pete Hakkarainen
+    abstract: >
+      With SUSE Rancher Prime it is possible to deploy and manage downstream cluster applications with multiple methods. The method to select depends on your needs. The simplest method is to tell the path of a container image to run. This is simple, you then need to configure the application manually for the storage location, service type and port etc.
+
+      To allow the configuration during the application deployment, Helm can be used. To enable central management for the applications, Fleet and Git can be used for manifest repository.
+
+      To bring security in the application management, SUSE Application Collection could be used. It currently contains well over 100 Kubernetes applications that are curated for known exploits, and as new vulnerabilities will be exposed, SUSE will publish new curated application artifacts as soon as possible.
+
+      In this hands-on session the above application deployment methods will be introduced and used. Along with the application layer security SUSE Application Collection provides, additional container security aspects will be introduced with SUSE Security and Kubewarden.
+    track: Hands on Lab
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "13:45"
+    end_time: "15:45"
+    room: Karlin 1
+    length: 120
+    tags: []
+
+  - id: "TUTORIAL-1168"
+    title: Migrating from VMware to SUSE Virtualization
+    speaker: "Alejandro Bonilla, Alessandro Pilotti"
+    abstract: >
+      Recent changes in VMware licensing are accelerating the demand for migrating existing workloads to other platforms, including SUSE Virtualization (Harvester), which is often adopted in similar on-premises scenarios with a significantly lower TCO. During this session we will discuss various migration strategies and introduce Coriolis, a VM migration as a service and DRaaS solution that fully automates lift-and-shift migrations in a scalable way for both Linux and Windows VMs. The session will also include a fully automated lift-and-shift and live demo from VMware to SUSE Virtualization using Coriolis.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 2
+    length: 30
+    tags: ["cloud-infrastructure", "virtualization"]
+
+  - id: "BUSINESS-1245"
+    title: "Sovereign AI journey: From idea to production"
+    speaker: "Cyril Cuvier, Nicolas STRENG"
+    abstract: >
+      How a 200-year-old French enterprise successfully deployed a fully sovereign, on-premise generative AI platform to curb shadow IT, deliver real value to business teams, and accelerate innovation.
+
+      We'll cover architecture choices, governance, security, and the cultural shift required to responsibly scale AI across the organization.
+    track: Business Insights
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 3
+    length: 30
+    tags: ["digital-sovereignty", "ai"]
+
+  - id: "CUSTOMER-1311"
+    title: "Sylva & Cluster API: what works, what's next"
+    speaker: Thomas Morin
+    abstract: >
+      In this talk, we'll present the Sylva project, focusing on our journey with Cluster API. We'll tell you about why we made it an architectural cornerstone of Sylva, and how it allowed us to build an opensource on-premise Kubernetes infrastructure stack, baremetal or virtualized.
+
+      You'll also hear about Orange's field experience with such a Cluster API -based stack, and what we learned as end-users.
+
+      If you discover Cluster API, you'll learn the basics, in particular how it is vendor-agnostic and infra-agnostic, but also how Cluster API let's us easily build clusters from scratch, with the same tooling that handles the management cluster lifecycle, that manages workload clusters, and no additional tool to do full end-to-end deployments in CI.
+
+      The last part of the talk will be about where room for improvement lies: expected or desired evolutions in Cluster API, in operating systems used, or improvements in how Sylva uses Cluster API.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 4
+    length: 30
+    tags: ["kubernetes", "open-source"]
+
+  - id: "TUTORIAL-1096"
+    title: High Availability for SAP workloads on SUSE Linux 16
+    speaker: "Fabian Herschel, Lars Pinne"
+    abstract: >
+      SLE 16 is a new major release with noticeable changes.
+
+      We will outline how SUSE HA for SAP will look like on SLE 16.
+
+      Concepts and examples will be shown for:
+
+      - SAP HANA DB scale-up and scale-out
+
+      - SAP S/4HANA application platform
+
+      We also will discuss changes and upgrade options.
+
+      Questions are welcome!
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Palmovka 1
+    length: 30
+    tags: ["enterprise-linux", "sap-solutions"]
+
+  - id: "OVERVIEW-1169"
+    title: "Scaling Kubernetes Beyond Boundaries: The Power of SUSE Virtual Clusters with K3k"
+    speaker: "Rossella Sblendido, Jean-Phillipe Gouin"
+    abstract: >
+      As modern development teams continue to push the limits of multi-tenant Kubernetes environments, the need for lightweight, isolated, and flexible cluster solutions has never been greater. SUSE Virtual Clusters provides each tenant with what feels like a dedicated, full-fledged Kubernetes cluster, while sharing the underlying host cluster's compute resources.
+
+      In this session, we'll dive deep into the architecture of our virtual clusters, explaining the core components and how they cooperate to deliver strong isolation with minimal overhead. We'll discuss the tradeoffs between full cluster independence and shared infrastructure efficiency, including performance considerations and the current limitations.
+
+      Beyond the theory, we'll show real-world use cases that highlight how SUSE Virtual Clusters enable scalable testing environments, and secure multi-tenant platforms—all with minimal overhead.
+
+      Finally, we'll share feedback from the Early Adopter Program and a sneak peek of the roadmap, including upcoming features aimed at improving cluster performance, developer experience, and ecosystem interoperability. Join us to explore how virtual clusters are redefining the way teams think about Kubernetes scalability and isolation.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Palmovka 2
+    length: 30
+    tags: ["devops", "kubernetes"]
+
+  - id: "CUSTOMER-1161"
+    title: "Building automated internal Cloud at Aussie Broadband with SUSE Rancher Prime, Elemental, SUSE Virtualization, SUSE Edge and GitOps"
+    speaker: "Andrew Hainsworth, Stefan Scharlott, David Grolimund"
+    abstract: >
+      Aussie Broadband (ABB) is building a highly automated, multi-site platform on bare metal using SUSE Rancher, SUSE Elemental, SUSE Edge, SUSE Harvester and GitOps tooling. In this session we'll show how we turned “click-ops” and spreadsheets into a fully automated lifecycle for clusters, VMs, and OS images – from a powered-off server in the rack to production-ready Kubernetes.
+
+      We'll walk through how ABB uses NetBox as a source of truth, Rancher to manage RKE2 and Elemental clusters, and Gitea + Argo CD to drive end-to-end provisioning pipelines, backed by Portworx software-defined storage We'll dive into key patterns like declarative bare-metal onboarding with Elemental, automated bootstrapping, Git-driven OS image and cloud-init management, and GitOps driving application and VM deployments.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "14:30"
+    room: Palmovka 3
+    length: 30
+    tags: ["devops", "automation"]
+
+  - id: "ROADMAP-1427"
+    title: SUSE AI Roadmap
+    speaker: "Ronald Nunan, Alessandro Festa"
+    abstract: >
+      In this session we will discuss the future direction of the how the SUSE AI Product will evolve. Come learn the key functionality & features for the upcoming releases. This interactive session will also give you an opportunity to provide feedback to the SUSE AI roadmap.
+    track: Product Roadmap
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:00"
+    end_time: "15:15"
+    room: Palmovka 4
+    length: 75
+    tags: ["ai"]
+
+  - id: "CUSTOMER-1428"
+    title: Redefining the Virtualization Stack of the Future
+    speaker: "Om Prakash Singh, Arnab Chatterjee"
+    abstract: >
+      Nearly every organization is dealing with a virtualization quagmire. Keep or migrate off of VMWare? For a lot of us, increased cost and vendor lock-in are forcing us to look at alternatives. However, even the thought of lifting and shifting to a new hypervisor or containers can be painful. But what if there's an option? At Nomura, we call our modernization effort and move off VMWare “Lift and Fit,” deploying a unified platform that supports and manages both VMs and containers. In this session, we'll discuss the reality of virtualization today, the options we explored, and how we partnered with SUSE for the perfect solution. We'll also walk through our architecture and shift from Infrastructure-as-a-Server to Infrastructure-as-Code.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization", "containers"]
+
+  - id: "TUTORIAL-1094"
+    title: "Optimizing AI Workloads on Dell PowerEdge XE Servers with SUSE Linux: Performance and Sizing Strategies"
+    speaker: "Manya Rastogi, Gerson Guevara, Colin Rutherford"
+    abstract: >
+      AI adoption is accelerating, but sizing and deploying infrastructure for diverse workloads remains complex. In this session, Dell and SUSE experts will share how Dell PowerEdge XE servers, combined with SUSE Linux Enterprise and SUSE AI solutions, deliver a secure, scalable foundation for enterprise AI. We'll explore real-world deployment strategies, performance tuning, and integration best practices that simplify operations and reduce risk. A key highlight: our “t-shirt sizing” framework for AI servers—helping customers quickly choose the right configuration for training, inference, and edge AI. Attendees will leave with practical guidance to accelerate AI initiatives while maintaining flexibility and cost efficiency.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 3
+    length: 30
+    tags: ["ai", "business-applications"]
+
+  - id: "TUTORIAL-1234"
+    title: "Multi-Architecture RAN Deployments: Configuring SUSE Telco Cloud for Intel, AMD, and Arm Platforms"
+    speaker: "Nicolas Scheidecker, Christophe Le Dorze"
+    abstract: >
+      This technical session demonstrates how to configure and operate SUSE Telco Cloud to support carrier-grade RAN workloads across multiple processor architectures (Intel Xeon, AMD EPYC, and Ampere Altra).
+
+      Attendees will learn the practical steps to enable Telco-specific features including SR-IOV configuration, DPDK optimization, CPU isolation with kernel tuning, huge pages allocation, and NUMA-aware scheduling on heterogeneous hardware.
+
+      We'll walk through the configuration of RKE2 clusters with real-time kernel support, demonstrate how GitOps enables consistent deployments across different silicon platforms, and show unified lifecycle management through Rancher.
+
+      The session includes hands-on configuration examples from a production deployment running Open RAN workloads, highlighting the specific kernel parameters, and Kubernetes configurations required to achieve deterministic low-latency performance regardless of underlying hardware vendor.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "kubernetes"]
+
+  - id: "TUTORIAL-1111"
+    title: A Practical Guide to SAP Automation with Ansible on SUSE Linux Enterprise Server for SAP 16
+    speaker: Marcel Mamula
+    abstract: >
+      Manual SAP management is no longer sustainable. This fast-paced session provides a practical guide to the powerful Ansible automation capabilities built into SUSE Linux Enterprise Server for SAP Applications 16.
+
+      We move beyond the basics to explore high-impact automation workflows, including OS provisioning, application installation, and High-Availability (HA) clustering. By analyzing core playbook logic and sharing battle-tested 'lessons learned,' this session delivers a condensed look at building and maintaining a resilient SAP landscape. You will leave with a clear understanding of how to leverage these integrated tools to accelerate your deployments and simplify ongoing operations.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:45"
+    end_time: "15:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["automation"]
+
+  - id: "TUTORIAL-1059"
+    title: "From Lag to Lightning: The Engineering Strategy Behind the SUSE Rancher Performance Overhaul"
+    speaker: "Mario Manno, Alejandro Ruiz"
+    abstract: >
+      As Kubernetes estates grow, managing thousands of clusters and 100k+ resources presents a critical performance challenge. Join the SUSE engineers who tackled this problem head-on in this deep-dive session. We will unpack the major initiatives that improved SUSE Rancher's speed and scalability.
+
+      You'll learn about:
+
+      * Project Vai (Lightning UI): How a re-architecture of Kubernetes data-fetching delivers “lightning-fast” UI interactions.
+
+      * RBAC Boost: How we re-architected authorization to drastically cut overhead in large environments.
+
+      * GitOps at Scale: A look at the optimizations made to Fleet and the benchmark results from scaling it to 2,000 clusters.
+
+      This session is for managers, operators, and engineers who want to understand how Rancher scales—and how we make it happen. We will also share key architectural takeaways for your own environment.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "14:45"
+    end_time: "15:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "kubernetes"]
+
+  - id: "TUTORIAL-1204"
+    title: "AI Observability with OpenTelemetry: Patterns and Best Practices"
+    speaker: "Thiago Bertoldi, Gunasekhar Matamalam"
+    abstract: >
+      Generative AI has introduced a new governance nightmare: non-deterministic systems operating at scale. To prevent your AI production environment from spiraling into chaos, you need to implement robust, domain-specific Observability.
+
+      Observability is not simply capturing data; it involves using that data to infer how well a system is operating. The unique nature of AI creates a new set of challenges for understanding and evaluating performance.
+
+      In this session, we will design effective observability strategies for your SUSE AI workloads. We will explore patterns to handle RAG-powered and Agentic architectures, providing practical advice on instrumenting your stack. You will learn to leverage SUSE Observability capabilities and apply the vendor-agnostic standard OpenTelemetry to ensure your AI is production-ready.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "16:15"
+    room: Karlin 3
+    length: 30
+    tags: ["observability", "ai"]
+
+  - id: "TUTORIAL-1063"
+    title: MetalLB BGP Routing for SUSE Edge
+    speaker: "Antonio Alonso Alarcon, Jonas Arndt"
+    abstract: >
+      Using MetalLB in layer 3 (a.k.a. BGP) mode was introduced as a tech preview in EDGE 3.4. It allows for your cluster nodes to establish BGP peering sessions with local network routers and can therefore advertise IPs of external cluster services. This can both increase robustness and limit spreading of packets across cluster nodes.
+
+      In this interactive presentation and demo we will demonstrate how MetalLB BGP can be used to expose a simple cluster service. We will go through basic concepts for BGP, and how to set up FRR routers in containers to interact with the cluster nodes.
+
+      We will also show how the loss of a node immediately affects the routing tables of the local allowing them to direct traffic to unaffected nodes where the service is still presence to prevent service outage.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "16:15"
+    room: Karlin 4
+    length: 30
+    tags: ["kubernetes"]
+
+  - id: "TUTORIAL-1147"
+    title: Ensuring High Availability SAP with SUSE Multi-Linux Manager
+    speaker: "Kevin Metz, Matt Lewis"
+    abstract: >
+      In modern mission-critical SAP landscapes, high availability, security, and ease of operations are a must. In this session, explore with SUSE how its Multi Linux Manager (MLM) platform empowers the enterprise and help architect resilient SAP environments that approach zero downtime. We'll dive into lifecycle management strategies with a focus on live patching, enabling continuous uptime even during kernel updates. Learn how OpenSCAP integration enhances security and vulnerability monitoring across diverse Linux distributions on MLM. The session will also cover Long Term Service Pack Support (LTSS) options, ensuring extended lifecycle coverage for SAP workloads. Attendees will learn how Azure and SUSE together minimize risk and ensure robust, secure, highly available SAP infrastructure.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["enterprise-linux", "linux-systems-management"]
+
+  - id: "CUSTOMER-1336"
+    title: "From Red Hat OpenShift to SUSE Rancher on SUSE Virtualization: A Seamless Migration Guide"
+    speaker: "Cleber Paiva de Souza, Natã Mourão"
+    abstract: >
+      Managing enterprise Kubernetes environments demands integrated, secure management. This session presents a real-world case study on deploying a comprehensive Kubernetes platform with the full SUSE Rancher suite. We'll showcase how Rancher Manager orchestrates clusters, streamlines operations, and enforces granular RBAC. Longhorn provides resilient persistent storage; NeuVector secures containers with runtime protection, scanning, and microsegmentation. Rancher Fleet implements GitOps for automated, declarative deployment, ensuring consistency and auditability. Cert-Manager handles automated TLS; SUSE Observability provides centralized monitoring.
+
+      Additionally, we will present the architecture of a highly available etcd cluster deployed across three availability zones in a stretched cluster infrastructure, including the use of a witness node to maintain quorum and ensure control plane resilience in multi-site environments.
+
+      Attendees will learn how these integrated SUSE technologies enhance security, compliance, agility, and availability, making Kubernetes management simpler, faster, and more reliable.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["business-applications"]
+
+  - id: "OVERVIEW-1285"
+    title: "Secure. Sovereign. Simple: Exoscale and SUSE Together"
+    speaker: "Nico Lamberti, Gernot Horak"
+    abstract: >
+      Exoscale and SUSE offer a powerful combination for organizations that value digital sovereignty, strong security, and reliable performance. In this session, we show how the two platforms work together to provide a trusted European cloud environment while keeping full control over data and compliance. You will learn how SUSE and Exoscale simplify cloud adoption, strengthen protection against risks, and enable a smooth, predictable operation of business-critical applications — without sacrificing flexibility or independence.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["cloud-infrastructure", "digital-sovereignty"]
+
+  - id: "ROADMAP-1310"
+    title: SUSE Linux Roadmap
+    speaker: Michal Svec
+    abstract: >
+      Overview of SUSE's roadmap for SUSE Linux 16. In this session, the presenters will explain the plans for the upcoming release of SLES 16. We will outline
+      the key features planned for SLES 16.1 and will go into detail on what their benefits and how they would be used in real-life scenarios.
+    track: Product Roadmap
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "15:45"
+    end_time: "17:15"
+    room: Palmovka 4
+    length: 90
+    tags: ["enterprise-linux"]
+
+  - id: "CERTIFICATION-1445"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "18:30"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "HOL-1436"
+    title: Whats New in SUSE Linux Enterprise Server 16
+    speaker: Zia Rehman
+    abstract: >
+      As the successor to the highly successful SLES 15 family, with SLES 16 we modernized the entire systems management stack to prioritize automation, remote accessibility, and integration with modern DevOps practices. The result is a Linux operating system designed to meet the next generation of IT challenges.
+
+      This hands-on session first introduces you to Cockpit, the industry standard web-based, remote management console for modern Linux distributions. You will explore using Cockpit for easy remote management, viewing system state, logs, and performance in real-time, all from a web browser.
+
+      SLES has transitioned to NetworkManager for configuring and managing networking. You will use NetworkManager to manage the network configuration.
+
+      The most significant security update in SLES 16 is the transition from AppArmor to SELinux as the default Mandatory Access Control (MAC) framework. You will explore how SELinux offers the granular control required in high-security environments. SLES 16 ships with over 440 policy modules providing broad system coverage from day one.
+
+      By the end of this session, you will understand the remote management capabilities of Cockpit, how to use NetworkManager, and how to use SELinux to provide mandatory access control as a key component in the SLES 16 security framework.
+    track: Hands on Lab
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "18:30"
+    room: Florenc 2
+    length: 120
+    tags: []
+
+  - id: "HOL-1437"
+    title: Deploying AI Models on SUSE Virtualization with Portworx Enterprise
+    speaker: "Alejandro Bonilla, Joshua Crater"
+    abstract: >
+      Ready to build a modern, high-performance platform for AI/ML? This hands-on lab will guide you through the entire process, step-by-step.
+
+      We will start with an overview of SUSE Virtualization (Harvester) as our hyperconverged infrastructure (HCI) foundation. You will then learn how to deploy and integrate Portworx Enterprise to provide robust, cloud-native persistent storage. Finally, we will put our new stack to the test by deploying a functioning AI model, demonstrating a complete, enterprise-grade solution for running dataintensive workloads. This is a 100% hands-on session designed to give you practical, repeatable skills.
+    track: Hands on Lab
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "18:30"
+    room: Karlin 1
+    length: 120
+    tags: []
+
+  - id: "TUTORIAL-1137"
+    title: "Accelerating Modernization: Simplifying Large-Scale VM Migration to SUSE Virtualization"
+    speaker: "Bhumitra Nagar, Dhruv Bhatnagar"
+    abstract: >
+      Enterprises are rapidly moving toward cloud-native operations where VMs and containers run together on Kubernetes. KubeVirt enables this coexistence across open infrastructure, but migrating large VM workloads from traditional environments still brings downtime, performance impact, and operational complexity.
+
+      This session demonstrates how to migrate large virtual machines into SUSE Virtualization, enabling a smooth transition from private cloud platforms like VMware and OpenStack. You'll see how Kubernetes-based virtualization scales resources, simplifies management, and makes disaster recovery simpler with Kubernetes-native constructs, accelerating the journey toward an open, cloud-native future.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 2
+    length: 30
+    tags: ["kubernetes", "virtualization"]
+
+  - id: "TUTORIAL-1248"
+    title: "AI Universal Proxy: What it is and why it's needed "
+    speaker: Alessandro Festa
+    abstract: >
+      The SUSE AI Universal Proxy addresses the growing complexity of deploying and managing AI services in enterprise environments. By providing a unified reverse proxy and management layer for MCP servers, it enables:
+
+      * Unified API Gateway: Single entry point for all AI services
+
+      * Service Orchestration: Automated service discovery and registration
+
+      * Load Balancing: Intelligent routing with session affinity
+
+      * Security: Enterprise-grade authentication and authorization
+
+      * Observability: Comprehensive monitoring and logging
+
+      * Scalability: Kubernetes-native deployment with auto-scaling
+
+      This solution bridges the gap between AI development and production deployment, making it easier to build and maintain AI-powered applications.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 3
+    length: 30
+    tags: ["ai", "business-applications"]
+
+  - id: "CUSTOMER-1269"
+    title: How SUSE Edge is used at Krones for Filling/Blowing and Labeling Machines
+    speaker: "Jan Kubes, Dominic Giebert"
+    abstract: >
+      In this session attendees will learn how Krones is using SUSE Edge for Industrial Use-Cases. We will speak about the challenges and solutions that help to fulfill the requirements in the Industrial Edge scenario and how the combination of the open source tools in the SUSE Edge stack help drive this.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "kubernetes"]
+
+  - id: "OVERVIEW-1396"
+    title: Bring the potential of AI to your SAP Day-Two operations with Trento
+    speaker: "Alberto Bravo, Al Kalafian"
+    abstract: >
+      Running SAP in modern, hybrid infrastructures demands operational excellence long after go-live. Trento delivers exactly that by providing a single pane of glass to validate the configuration, monitor and manage the Operating System stack of your SAP environment. It also integrates with MCP, allowing you to connect your enterprise LLM to the deep, real-time observability of the Trento platform and transforming your AI companion into an expert for your SAP landscapes. In this session we will show you how Trento's features around compliance, observability and automation help improve system reliability and reduce operational risk. And we will provide a live demo on how you can leverage your AI companion to make the most of these features.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 1
+    length: 30
+    tags: ["trento"]
+
+  - id: "CUSTOMER-1294"
+    title: "L-Bank's path to a modern, cloud-native platform architecture using SUSE Rancher "
+    speaker: "Paul Schmidt, Ricco Fendyk, Alexander Krist"
+    abstract: >
+      L-Bank, one of Europe's largest development banks, launched the #cleo cloud transformation project in 2024 to introduce technologies more quickly, manage the operating IT costs transparently (FinOps), operate third-party solutions itself, and modernize its IT. Together with Kubespectra.io, a multi-cloud architecture based on SUSE Rancher was created in three phases. At its core are Kubernetes clusters with integrated observability, security, CI/deployment, IAM/RBAC, FinOps, and certificate and ingress management. The standardized platform shortens development times, increases the efficiency and attractiveness of software development, and reduces resource consumption and CO₂. Technical and cultural challenges remain, such as legacy migration to service-oriented architectures and the establishment of true DevOps structures.
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 2
+    length: 30
+    tags: ["hybrid-multi-cloud-technologies", "open-source"]
+
+  - id: "TUTORIAL-1327"
+    title: Bridging the Gap from Rancher Desktop to Secure K8s Production via SUSE Rancher Developer Access
+    speaker: "Troy Topnik, François-Xavier Houard"
+    abstract: >
+      Developers need robust foundations for modern applications, but Context Drift between dev and testing environments creates delays and security risk. This session details how SUSE Rancher Developer Access tackles this challenge by prioritizing developer experience and accelerating delivery. We demonstrate the seamless workflow using the Rancher Desktop UI extension to deliver Application Collection artefacts—specifically low-CVE SLE BCI base images—directly to the developer's workstation. This delivers a unified source of truth, making development faster, reliable, and secure by default ("Makes Dev happy, Keeps Ops serene"). Learn how starting with these shared, compliance-embedded foundations (SBOM, SLSA L3 provenance) eliminates upstream complexity and reduces security reviews, allowing developers to focus purely on code.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 3
+    length: 30
+    tags: ["application-delivery", "devsecops"]
+
+  - id: "TUTORIAL-1042"
+    title: Unlock the Full Potential of Your Data with SUSE Virtualization and Dell Storage
+    speaker: "Chidambara Shashikiran, Rabeeh Boufaissal, Gerson Guevara"
+    abstract: >
+      Join us for an exciting session where we unveil the powerful integration of SUSE Virtualization with Dell Storage platforms PowerStore, PowerFlex, and PowerMax. This collaboration brings together SUSE's innovative open source hyperconverged infrastructure solution and Dell's cutting-edge enterprise storage platforms, delivering unparalleled efficiency, scalability and simplicity for the modern data center. Our experts will demonstrate how SUSE Virtualization's seamless integration with Dell Storage enables infrastructure consolidation and modernization, providing valuable insights into how this solution can transform your entire IT strategy for the better. Don't miss this opportunity to stay ahead of the curve and unlock the full potential of your data with SUSE Virtualization and Dell Storage.
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "17:15"
+    end_time: "17:45"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization"]
+
+  - id: "OVERVIEW-1044"
+    title: "Built for Agentic AI: SUSE AI Architectures on FUJITSU PRIMERGY"
+    speaker: "Motahareh Kardeh, Jochen Riedisser"
+    abstract: >
+      This session provides an overview of SUSE AI and how it enables a stable, scalable, and cost-efficient AI platform based on SUSE Rancher and FUJITSU PRIMERGY servers. The focus will be on using SUSE AI as a foundation for next-generation AI development, including Agentic Coding and AI-driven development tools.
+
+      Attendees will learn how customers can efficiently deploy, manage, and scale SUSE AI workloads on FUJITSU infrastructure, and explore practical AI use cases and development scenarios.
+
+      The session will also highlight SUSE Rancher OEM support within Fujitsu, demonstrating how the collaboration between Fsas Technologies and SUSE enhances flexibility, performance, and enterprise-grade reliability for AI platforms.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "17:15"
+    end_time: "17:45"
+    room: Karlin 3
+    length: 30
+    tags: ["ai"]
+
+  - id: "CUSTOMER-1274"
+    title: "Edge based RAN Power Optimization Solution "
+    speaker: "Karthikeyan Rajendran, Ullas Krishnan"
+    abstract: >
+      RAN Power Optimization solution harnesses AI to intelligently predict cellular load across clusters of cells and dynamically execute Cell Switch On/Off actions. The solution is edge-deployed for low-latency decision-making and offers seamless integration with multi-vendor RAN environments
+    track: Customer Experience
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "17:15"
+    end_time: "17:45"
+    room: Karlin 4
+    length: 30
+    tags: ["ai"]
+
+  - id: "OVERVIEW-1463"
+    title: AMD Enterprise AI Solutions
+    speaker: "Isabelle Liu, Andy Allred"
+    abstract: >
+      Explore how to build and scale AI using the AMD AI software stack. This session introduces the AMD Enterprise AI Suite, built on SUSE components, and demonstrates how it supports efficient deployment and management of AI workloads. You'll learn how to integrate AMD technologies into your infrastructure and how the AMD open-source AI platform works with industry-standard tools to accelerate AI development, while enabling Sovereign AI strategies.
+    track: Product Overview
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "17:15"
+    end_time: "17:45"
+    room: Palmovka 1
+    length: 30
+    tags: ["business-applications"]
+
+  - id: "TUTORIAL-1383"
+    title: CloudNative Buildpacks with Epinio and Rancher
+    speaker: "Colin Griffin, David Johnson"
+    abstract: >
+      In this session we review the Cloud Native Buildpacks project, and it's rising popularity with platform engineering and development teams. Learn the anatomy of a buildpack, gain insights on how groups like Heroku and Netlify leverage buildpacks, and how Epinio is bringing these capabilities to self-hosted platforms.
+
+      We will review:
+
+      - Cloud Native Buildpacks fundamentals
+
+      - How Epinio simplifies buildpack, application artifact, and workload management
+
+      - The future of Cloud Native Buildpacks
+
+      - One-click deploy Epinio using the Epinio Rancher Extension
+
+      - Creating/using your own buildpack or project.toml
+
+      - Deploying and binding to AI services
+    track: "Technical Tutorial / \"How To\""
+    day: "Tuesday"
+    date: "2026-04-21"
+    time: "17:15"
+    end_time: "17:45"
+    room: Palmovka 2
+    length: 30
+    tags: ["application-delivery"]
+
+  - id: "CERTIFICATION-1446"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "13:00"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "OVERVIEW-1268"
+    title: "Future-Proof Your IT: Simplify, Scale, and Secure Virtualization"
+    speaker: Dawid van der Merwe
+    abstract: >
+      Legacy virtualization is costly, complex, and insecure, limiting IT agility and business growth. This session shows how SUSE Virtualization helps organizations reduce TCO, simplify operations, and securely scale across hybrid, cloud, and edge environments. Learn how to empower IT teams to deliver services faster, modernize workloads, and build a secure, future-proof infrastructure.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 2
+    length: 30
+    tags: ["security", "virtualization"]
+
+  - id: "TUTORIAL-1091"
+    title: "Extend Your Control: Building Custom Cockpit Modules"
+    speaker: Jurriën Bloemen
+    abstract: >
+      With the evolution of system administration tools like the transition away from traditional interfaces such as YaST in environments like SLES 16, Cockpit is becoming the modern, web-based standard for server configuration and monitoring.
+
+      But what happens when you need to manage your own applications, or a critical utility—like NTP—lacks a native Cockpit interface? (For example)
+
+      This session dives deep into the practical steps and necessary considerations for writing your own custom Cockpit modules. Attendees will learn:
+
+      - The essential architecture and technology behind Cockpit modules.
+
+      - How to integrate your unique applications and management tasks into the web console.
+
+      - Key security, performance, and design elements to ensure a robust and seamless user experience.
+
+      Leave this session ready to extend Cockpit's power and bring all your system management tasks under one centralised, modern interface.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 3
+    length: 30
+    tags: ["enterprise-linux", "linux-systems-management"]
+
+  - id: "CUSTOMER-1324"
+    title: Why and How the Brazilian State Court of state of Sergipe Migrated from OpenShift to SUSE Rancher Prime
+    speaker: "Wendell Lessa, Gabriel Lins"
+    abstract: >
+      Following the 2024 floods, the National Council of Justice (CNJ) established a strict mandate for all courts to adopt cloud-based disaster recovery and backup solutions. The Court of Justice of Sergipe (TJSE) faced a dilemma: its installed OpenShift base did not offer efficient and affordable support for managing multiple clusters in hybrid environments (multi-cloud). In this session, the challenges and the strategic transition to SUSE Rancher will be presented as the solution to achieve regulatory compliance quickly and securely, ensure service continuity, and gain cost predictability and technological freedom of choice, overcoming vendor lock-in.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 4
+    length: 30
+    tags: ["kubernetes", "containers"]
+
+  - id: "OVERVIEW-1095"
+    title: "Trust in Every Bit: How SUSE Linux Enterprise Server 16 Reproducible Builds Mitigate Supply Chain Risk"
+    speaker: Bernhard M. Wiedemann
+    abstract: >
+      How do you prove that the software your organization runs (or ships to customers) has not been tampered with? In an era of sophisticated supply chain attacks, traditional security measures are insufficient. We must be able to trust the binaries themselves.
+
+      This session explains how we achieved this "trust in every bit" for SUSE Linux Enterprise Server 16.0. As the main technical contributor to this initiative, I will detail the engineering efforts required to make an entire enterprise operating system "reproducible", capable of being rebuilt from source to produce bit-for-bit identical packages, every time.
+
+      We will move quickly from the "what" (overcoming nondeterministic toolchains, build-time variables, etc.) to the "so what." This talk focuses on translating this technical milestone into a critical business and security strategy. You will learn how Reproducible Builds:
+
+      * Directly Mitigate Supply Chain Risk
+
+      * Provide a Foundational Layer for Zero Trust
+
+      * Act as a Commercial Differentiator
+
+      * Streamline High-Stakes Compliance
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 1
+    length: 30
+    tags: ["security", "compliance"]
+
+  - id: "OVERVIEW-1305"
+    title: "Kubernetes Audit: Buy Yourself Peace of Mind"
+    speaker: "Wojciech Mroczkowski, Kacper Wasiak"
+    abstract: >
+      Your Kubernetes cluster might seem healthy today — but beneath the surface, serious risks may be waiting to strike. At Sorigo, we've seen what happens when these “unknown unknowns” emerge: data breaches that destroy trust, multi-day outages that burn cash, and vendor lock-in that sends cloud spend out of control.
+
+      Through a real client story, we'll expose the most critical threats hiding in RKE2 and Rancher environments: failed disaster recovery that leaves businesses paralysed, unsecured clusters that expose sensitive data, poor performance that drives customers away, and missing backups that turn minor incidents into full-scale crises.
+
+      You'll discover:
+
+      • Real threats and their business impact – from reputation damage to compliance risk
+
+      • How a Kubernetes security audit uncovers hidden risks before they become disasters
+
+      • The audit process – what we examine and how it links to business outcomes
+
+      • Concrete outcomes – how one client turned risk into a resilient, well-governed platform
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 2
+    length: 30
+    tags: ["security", "compliance"]
+
+  - id: "OVERVIEW-1275"
+    title: "Sovereign AI at large Scale: Architecting Multi-Tenant PrivateGPT with SUSE Rancher"
+    speaker: "Alexandra Portz, Jochen Riedisser"
+    abstract: >
+      How do you scale Generative AI to thousands of isolated tenants without exploding costs or risking EU AI Act compliance? This session unveils the Fsas Technologies "Trusted Provider" Program, utilizing a distributed PrivateGPT architecture orchestrated by SUSE Rancher.
+
+      We demonstrate a cost-effective strategy by decoupling inference from data. Tenants run lightweight "PGPT Edge" nodes on-premise for absolute data sovereignty, connecting to a centralized "PGPT AI Base" that aggregates resource-intensive workloads. Learn how MSPs can orchestrate this edge-to-core environment, ensuring strict isolation and API security.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 3
+    length: 30
+    tags: ["digital-sovereignty", "ai"]
+
+  - id: "ROADMAP-1418"
+    title: SUSE Virtualization Roadmap
+    speaker: Forbes Guthrie
+    abstract: >
+      An interactive session to learn where we are headed with Virtualisation as the next-gen platform for infrastructure. Exchange in live discussion thoughts and feedback directly with the Product Leadership.
+    track: Product Roadmap
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:00"
+    end_time: "12:15"
+    room: Palmovka 4
+    length: 75
+    tags: ["virtualization"]
+
+  - id: "TUTORIAL-1035"
+    title: How a MSP saved millions by migrating SAP workloads from VMware to SUSE/KVM
+    speaker: "Deepak Patel, RahulKrishna Gupta"
+    abstract: >
+      A large MSP based in India, focused on SAP Hosting, had thousands of cores dedicated to VMware. Post the Broadcom / VMware change in licensing policy, the MSP was staring at a 5x increase in their VMware license cost. This would have resulted into significant cost increase, which they would have to pass onto their customers, making them in-competitive. Since the SAP workloads were running on SUSE, the MSP turned to SUSE for help. SUSE proposed a solution built around SUSE / KVM and SLE High Availability Extension. In this session we will see how the MSP tested the proposed platform built on SUSE / KVM and after thorough testing, the MSP decided to build a new infrastructure on SUSE / KVM and migrate thousands or workloads from VMware.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 2
+    length: 30
+    tags: ["sap-solutions", "virtualization"]
+
+  - id: "OVERVIEW-1230"
+    title: Making AI Work with Enterprise Systems Using MCP
+    speaker: "Rossella Sblendido, Anna Maresova"
+    abstract: >
+      As organizations adopt AI, the gap between model capabilities and system understanding remains a critical hurdle. At SUSE, we solved this by transforming our portfolio into an environment where AI agents can securely interact with live data and workflows. The key enabler? The Model Context Protocol (MCP).
+
+      This session details SUSE's journey in operationalizing AI. We will demonstrate how we moved beyond simple prompts to build a unified interface for our tools. You will see how we utilized MCP to enable AI-driven patch triage, CVE analysis, and SLES configuration insights. We will also dive into how we enabled conversational troubleshooting within Rancher.
+
+      This is a deep dive into the engineering decisions, integration patterns, and security principles that allowed us to make our products AI-ready, offering a roadmap for architects and engineers looking to achieve the same operational depth.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 3
+    length: 30
+    tags: ["ai", "automation"]
+
+  - id: "TUTORIAL-1126"
+    title: "SUSE Edge: A consulting best practice guide for manufacturing Edge scenarios"
+    speaker: "Martin Weiss, Dominic Giebert"
+    abstract: >
+      In this session SUSE consulting will share experience and knowledge based on several deployments of SUSE Edge in Industrial Edge use-cases. We will demonstrate how implementation and maintenance can be done in a scalable and cloud-native way to support the transition / merge of IT and OT we have been helping several customers with in the past few years.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "kubernetes"]
+
+  - id: "TUTORIAL-1115"
+    title: "Confidential Computing: Cutting Through the Hype!  An overview of Confidential computing on AWS "
+    speaker: "Graham Hares, David Rocha, Stephen Mogg"
+    abstract: >
+      Customers worldwide trust SUSE with sensitive data and mission-critical applications. But escalating threats require more than just running on SUSE.
+
+      The Challenge: Confidential Computing terminology is broadly misapplied, creating industry confusion that prevents informed security decisions.
+
+      The Solution: This session defines Confidential Computing from SUSE's AWS perspective, showcasing how SLES combined with AWS technology and rigorous practices meets stringent data privacy requirements.
+
+      Learn to:
+      • Understand what Confidential Computing truly means in cloud
+      • Discover SUSE's approach to securing AWS workloads
+      • Leverage SLES for confidentiality and data sovereignty goals
+
+      Stop wrestling with vague security promises—get definitive protection guidance.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["security", "compliance"]
+
+  - id: "CUSTOMER-1410"
+    title: "WEG Developer Self-Service Portal: Automated Kubernetes Resource Provisioning with SUSE Rancher"
+    speaker: "Flávio Gussi, Jose Claudio Azevedo"
+    abstract: >
+      WEG is one of Brazil's largest electrical equipment manufacturers and a global leader in motors, transformers, automation systems, and industrial solutions, operating in more than 135 countries.
+
+      Within this context, the WEG Data Architecture team has developed a Self-Service Portal that redefines the developer experience through fully automated provisioning of Kubernetes resources using Rancher. The solution enables teams to create namespaces, deploy standardized WEG application templates (React/Next, FastAPI, NestJS, .NET Core, and Spring Boot), and provision Postgres and Valkey databases in a dedicated Rancher cluster — with operators handling backup, security, and observability.
+
+      This portal significantly reduces onboarding time, enforces architectural standards, eliminates manual configuration steps, and accelerates the delivery of new services and applications, boosting both developer efficiency and organizational agility.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["kubernetes", "automation"]
+
+  - id: "CUSTOMER-1402"
+    title: How SUSE and Open Source Software is being used to Deliver Justice.
+    speaker: "Paul McKeith, Roberto Machorro"
+    abstract: >
+      Learn how the non-profit Child Rescue Coalition uses technology hosted on multiple SUSE products (Rancher Prime, SUSE Virtualization, SUSE Storage, SL Micro, SUSE Observability, & SUSE Security). CRC developed technology known as the Child Protection System (CPS) that is used to protect and rescue children from child predators across the world. Used in over 106 countries. CPS, available for free to any law enforcement agency, provides vital information used to rescue almost 4,000 children, 17,000+ predators arrested, and the prevention the abuse of over 850,000 children. Being a non-profit with a very small team and reliant on donations, cost containment, efficiency, and supportable platform is critical to mission success.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["virtualization"]
+
+  - id: "BUSINESS-1417"
+    title: The Future of Virtualization
+    speaker: Arnab Chatterjee
+    abstract: >
+      Broadcom's acquisition of VMware poses a significant vendor lock-in risk and introduced sharp pricing volatility. However, this disruption is simultaneously a massive opportunity, serving as the essential catalyst for widespread IT strategy modernization.
+
+      Organizations are leveraging this moment to actively de-risk by moving beyond monolithic virtualization toward vendor-neutral, open-source alternatives (like KVM) and embracing true hybrid and multi-cloud architectures.
+
+      This strategic pivot is not just a migration; it is providing the necessary spark to institute fundamental change, resulting in a decentralized, modern, and portable future for core infrastructure, ensuring maximum business agility and resilience.
+
+      To many this may be a risk - but to all of us, this represents the biggest opportunity to systemic infrastructural change in a generation.
+
+      Owning your own infra through Kubevirt - and SUSE Virtualization is the first step to thriving in the new order.
+    track: Business Insights
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization", "containers"]
+
+  - id: "TUTORIAL-1382"
+    title: "Next-Level Automation: Autonomous Patching with the SUSE Multi-Linux Manager MCP Server"
+    speaker: Can Bulut Bayburt
+    abstract: >
+      Automation shouldn't just execute commands; it should reason about them. This session moves beyond static scripts and demonstrates how to achieve true automation using the new SUSE Multi-Linux Manager MCP server. We introduce the concept of an Autonomous Patching Agent (APA), a smart orchestration layer built with an agentic AI framework such as LangChain.
+
+      This technical tutorial provides a deep dive into how the APA uses natural language to plan, validate, and execute complex maintenance tasks. You will see code examples showing how the MCP exposes MLM's capabilities as tools that the AI agent can leverage when planning verifiable patching workflows.
+
+      We also detail how the APA securely interfaces with MLM through the OAuth 2.1-protected MCP server, ensuring all autonomous actions comply with strict RBAC policies. To address operational risk, we show how to implement guardrails and human-in-the-loop gates that restrict the agent's blast radius. Learn how this approach autonomously evaluates compliance, identifies target groups, and schedules secure, least-privilege maintenance, elevating multi-Linux security and control.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 3
+    length: 30
+    tags: ["linux-systems-management", "ai"]
+
+  - id: "CUSTOMER-1123"
+    title: "Banco do Brasil & SUSE Partnership: A 20-Year Journey of Linux Customization at Scale"
+    speaker: "Erico Mendonca, Ricardo Pires"
+    abstract: >
+      Banco do Brasil (BB), one of the world's largest financial institutions and a pillar of banking technology in the country, will present its strategic journey of more than two decades in the adoption, customization, and large-scale management of the Linux operating system.
+
+      This session will provide a retrospective of the initial milestones, from the pioneering migration to Conectiva Linux in 2003 to the pivotal moment that defined our strategy: the adoption of OpenSUSE in 2006 and the formalization of a deep strategic partnership with SUSE in 2010. We will detail how this collaboration provided the enterprise-grade foundation (SLES and SLED) necessary to build and scale a secure, customized ecosystem.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 1
+    length: 30
+    tags: ["enterprise-linux", "open-source"]
+
+  - id: "CUSTOMER-1139"
+    title: Leveraging SUSE Rancher Suite in an enterprise environment
+    speaker: "Martin Hering, Sven Pimmer, Marcel Christof, Lukas Stickel"
+    abstract: >
+      Together with ZEISS Semiconductor Manufacturing Technology (SMT), which develops and manufactures high‑precision optical and metrology systems for semiconductor production, we will show how we leverage the SUSE Rancher Suite in an enterprise environment. In this talk we'll give you insight into the challenges we faced while building our new container platform and how we solved them. We'll cover implementation-specific details, why we chose these tools, how they integrate with our existing infrastructure, and the operational and security benefits we gained. Topics include cluster lifecycle and upgrade and multi-cluster management, CI/CD and developer workflows, monitoring and observability as well as software defined storage aka. SUSE Storage.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 2
+    length: 30
+    tags: ["kubernetes", "automation"]
+
+  - id: "BUSINESS-1331"
+    title: EU Cloud Sovereignty Framework explained
+    speaker: Emiel Brok
+    abstract: >
+      A Blueprint for Trusted European Digital Services
+
+      The European Commission's Cloud Sovereignty Framework (Version 1.2.1, Oct. 2025) is a critical blueprint for defining, assessing, and ensuring the sovereignty of cloud services used within the European Union. Born from initiatives like Gaia-X, CIGREF's Trusted Cloud Referential, and EU legislation (NIS2, DORA), this framework supplements security requirements with sovereignty-specific safeguards to reduce dependency on non-EU actors and proprietary systems.
+
+      This session will dive into the technical and legal requirements of the framework, which uses a dual assessment approach: the Sovereignty Effective Assurance Level (SEAL) and a quantitative Sovereignty Score.
+
+      Key Components
+
+      We will break down the framework's core pillars:
+
+      The 8 Sovereignty Objectives (SOVs)
+
+      The assessment is built around eight objectives that define what sovereignty means in a cloud context:
+
+      SOV-1: Strategic Sovereignty
+
+      SOV-2: Legal & Jurisdictional Sovereignty
+
+      SOV-3: Data & AI Sovereignty
+
+      SOV-4: Operational Sovereignty
+
+      SOV-5: Supply Chain Sovereignty
+
+      SOV-6: Technology Sovereignty
+
+      SOV-7: Security & Compliance Sovereignty
+
+      SOV-8: Environmental Sustainability
+
+      The 5 Sovereignty Effectiveness Assurance Levels (SEALs)
+
+      The SEAL levels determine the minimum required level of assurance a cloud provider must meet for each objective:
+
+      SEAL-0: No Sovereignty
+
+      SEAL-1: Jurisdictional Sovereignty
+
+      SEAL-2: Data Sovereignty
+
+      SEAL-3: Digital Resilience
+
+      SEAL-4: Full Digital Sovereignty
+
+      This talk is crucial for open-source developers, EU-based cloud providers, and policymakers interested in contributing to or complying with the future of digital service procurement in Europe. We will discuss how open-source technology can directly contribute to achieving the highest SEAL levels and the maximum Sovereignty Score.
+
+      Emiel will also explain how SUSE can help enterprise organizations to become more sovereign, how to climb the SEAL ladder.
+    track: Business Insights
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 3
+    length: 30
+    tags: ["compliance"]
+
+  - id: "ROADMAP-1439"
+    title: Rancher Government Solutions Product Roadmap
+    speaker: "Adam Toy, Ryan Lewis"
+    abstract: >
+      Join the Rancher Government Solutions team as they walk through the roadmaps for their product lines.
+    track: Product Roadmap
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "12:30"
+    end_time: "13:15"
+    room: Palmovka 4
+    length: 45
+    tags: []
+
+  - id: "CERTIFICATION-1447"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "13:45"
+    end_time: "15:45"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "HOL-1433"
+    title: "RKE2 Security Capabilities, Testing and Configuration"
+    speaker: Juan Diego Perez Jimenez
+    abstract: >
+      As Kubernetes becomes the standard for mission-critical workloads, the choice of distribution determines an organization's baseline security posture. RKE2 is a security-focused distribution that is FIPS-compliant by default.
+
+      This hands-on workshop explores the internal architecture of RKE2 through a security lens. Participants will dive into its security configuration options and approach. Beyond configuration, we will put RKE2 to the test by performing automated security benchmarking. Using industry-standard tools, we will conduct a comparative analysis of RKE2 with other popular distributions, including EKS (AWS), GKE (Google), and KinD (local).
+
+      By the end of this session, attendees will understand how RKE2 simplifies compliance and how to validate the security posture of any Kubernetes cluster using objective benchmarking frameworks.
+    track: Hands on Lab
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "13:45"
+    end_time: "15:45"
+    room: Karlin 1
+    length: 120
+    tags: []
+
+  - id: "OVERVIEW-1119"
+    title: "Beyond Backup: Disaster Recovery for SUSE Virtualization with CloudCasa and Rancher Prime"
+    speaker: "Alejandro Bonilla, Pawel Staniec"
+    abstract: >
+      As organizations modernize their infrastructure, a simple backup is no longer enough. A comprehensive disaster recovery (DR) strategy for workloads on SUSE Harvester is a critical operational need. CloudCasa extends SUSE Rancher Prime and Harvester with enterprise-grade backup, restore, and application mobility for virtual machines, Kubernetes workloads, and persistent volumes—all through a single, unified interface.
+
+      In this session, we'll show how CloudCasa integrates natively with SUSE environments to build a truly resilient infrastructure. We'll move beyond simple backups to demonstrate true DR capabilities, including automating cross-cluster recovery and recovering from a site-wide failure. You'll see how to protect Harvester VMs alongside containerized workloads, manage DR policies centrally from Rancher, and perform rapid recovery to new clusters or cloud environments.
+
+      Attendees will gain hands-on insight into building and executing a robust DR plan for modern SUSE-based infrastructures with CloudCasa.
+
+      Session Agenda:
+
+      Introduction: Why Disaster Recovery Matters for Virtualized SUSE Workloads (Beyond Just Backup)
+
+      Architecture Overview: Harvester + Rancher Prime + CloudCasa for High Availability and DR
+
+      Live Demo 1: Protecting the Platform
+
+      Configuring secure, policy-based backups for Harvester VMs and volumes.
+
+      Performing granular, point-in-time restores.
+
+      Live Demo 2: The Disaster Recovery Scenario
+
+      Using Longhorn and CloudCasa for efficient, cross-cluster snapshot replication.
+
+      Simulating a cluster failure and executing a full DR failover to a standby cluster.
+
+      Live Demo 3: Application Mobility & Ransomware Recovery
+
+      Migrating a complete application (VMs + persistent data) to a new environment.
+
+      Restoring to a clean, immutable "golden snapshot" after a simulated ransomware event.
+
+      Best Practices: Building Your DR Playbook (Policy Management, RPO/RTO, and Compliance)
+
+      Q&A
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization", "business-applications"]
+
+  - id: "TUTORIAL-1068"
+    title: "From Cloud to Cart: Real-Time AI and Edge Computing for the Future of Retail with AWS, SUSE, and Lenovo"
+    speaker: "Chris Laffey, David Rocha, Ted Jones"
+    abstract: >
+      The modern retail landscape demands hyper-personalization, efficient inventory management, and a seamless omnichannel experience. This session details a reference architecture developed jointly by AWS, SUSE, and Lenovo that transforms the in-store experience by deploying sophisticated AI/ML and Generative AI (GenAI) workloads directly to the retail edge.
+
+      We will explore how this solution addresses common challenges like stock obsolescence and customer service failures by using a mobile application to track in-store customer activity in real-time. This data, combined with purchase history and loyalty information, triggers the creation and delivery of personalized coupons and assistance alerts.
+
+      Attendees will learn the technical implementation across the stack:
+
+      AWS: Used for training the predictive and GenAI models in the cloud, leveraging services like Amazon SageMaker.
+
+      SUSE: Provides the secure and scalable edge platform, utilizing SUSE Rancher Prime for centralized management of edge Kubernetes clusters and SUSE Edge for Retail (K3s and SUSE Linux Micro) as the secure, immutable runtime environment for containerized AI services.
+
+      Lenovo: Supplies the robust, high-performance edge hardware, such as the Lenovo ThinkEdge SE series, capable of running AI inference models (including SLMs and LLMs) at the store level.
+
+      Discover how integrating cloud training with secure, centrally managed edge infrastructure enables retailers to achieve real-time personalization, optimize store operations, and build the resilient, responsive store of the future.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 3
+    length: 30
+    tags: ["edge-computing", "ai"]
+
+  - id: "TUTORIAL-1120"
+    title: "Automating the Edge: One-Touch Deployment with SUSE Edge & Lenovo ThinkEdge"
+    speaker: "Adrian Huang, Hui-Zhi Zhao"
+    abstract: >
+      Discover the technical blueprint for a "one-touch" deployment workflow using SUSE Edge and Lenovo ThinkEdge servers. This session bypasses high-level concepts to dissect the mechanics of image customization and hardware integration.
+
+      Key Technical Takeaways:
+
+      • Edge Image Builder (EIB): Best practices for customizing OS images, injecting kernel modules, and enabling hardware features.
+
+      • Configuration: How to pre-stage Rancher configurations within the EIB workflow.
+
+      • Execution: Architecting deployment pipelines for bare-metal clusters via Lenovo XClarity.
+
+      Attendees will leave with a clear technical path to achieving consistent, automated edge operations.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "14:30"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing"]
+
+  - id: "OVERVIEW-1390"
+    title: "The Rise of Lifecycle Sovereignty: Taking Back Control of Your Enterprise Linux Future"
+    speaker: "Michall Laymon, Petar Dimov"
+    abstract: >
+      Modern enterprises are running more Linux than ever—but they're also facing unprecedented complexity. Forced upgrades, shifting vendor roadmaps, lifecycle gaps, and fragmented server estates are consuming time, budget, and talent. Most organizations aren't struggling with Linux… they're struggling with Linux lifecycle chaos.
+
+      This session introduces the concept of Lifecycle Sovereignty—a framework for regaining control over your Linux environment regardless of distribution, version, or age. We'll explore how global enterprises are reducing operational risk, modernizing on their own timelines, and creating predictable, compliant, and cost-stable Linux operations without reinstallation, requalification, or vendor lock-in.
+
+      Attendees will walk away with a clear understanding of the emerging industry trend toward lifecycle independence, the architectural patterns that support it, and how to build a resilient, multi-distro Linux strategy built for long-term stability—including how SUSE's open, flexible approach enables lifecycle freedom at scale.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "14:30"
+    room: Palmovka 1
+    length: 30
+    tags: ["digital-sovereignty"]
+
+  - id: "CUSTOMER-1206"
+    title: "Modernizing Mission-Critical Operations: SWEG's Automated Kubernetes Platform with SUSE Rancher Prime"
+    speaker: "Paul Greuter, Eugen Ilk"
+    abstract: >
+      SWEG, a major regional mobility provider in Germany, operates a rapidly growing on-premises Kubernetes landscape built on SUSE Rancher Prime. In this session, we share how SWEG — together with FULLSTACKS as a long-term partner — achieved a fully automated, highly reliable Kubernetes platform supporting critical transportation services.
+
+      We will demonstrate how Rancher Prime, SUSE Observability, and SUSE Security (NeuVector) enable SWEG to provision complete application-ready clusters in under 50 minutes, deliver stage-wide cluster upgrades in about 10 minutes per cluster, and ensure uninterrupted service for production workloads. Attendees will learn the architectural approach, automation patterns, operational lessons, and business outcomes that allow SWEG to focus on their core mission while maintaining a modern, secure, and compliant platform.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "14:30"
+    room: Palmovka 2
+    length: 30
+    tags: ["kubernetes", "automation"]
+
+  - id: "ROADMAP-1442"
+    title: "Maximizing Momentum: Real-World Success and the Roadmap of SUSE Services & Support"
+    speaker: "Miles Escow, Naji Almahmound, Mark Gradwell"
+    abstract: >
+      In an era of rapid digital transformation, the difference between a standard deployment and a market-leading solution often lies in the depth of partnership and the quality of support. Join us for a comprehensive 75-minute deep dive into how SUSE Global Services and our Customer Support organization are evolving to accelerate your business success.
+
+      This session is divided into three high-impact segments designed to provide both immediate value and long-term strategic insight:
+
+      1. Voices of Success: A Peer-to-Peer Panel Hear directly from SUSE customers currently collaborating with our Senior Consultants, Instructors, and Premium Support Engineers.
+
+      2. The Support Experience, Evolution & Feedback: We will provide a detailed update on the latest enhancements to the SUSE Customer Center and unveil our upcoming development roadmap.
+
+      3. SUSE Global Services Vision: The Road Ahead Get an exclusive first look at the future of SUSE Global Services. We will outline the strategic roadmaps for:
+
+      - SUSE Flexible Services: Comprehensive and flexible services when you need it most.
+
+      - Sovereign Premium Support: Specialized offerings to meet your sovereignty requirements.
+
+      - Training Services: Empowering your team with the latest open-source skills.
+    track: Product Roadmap
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:00"
+    end_time: "15:15"
+    room: Palmovka 4
+    length: 75
+    tags: []
+
+  - id: "CUSTOMER-1250"
+    title: "From Zero to Stretched Hero: Building a Three-Datacenter SUSE Virtualization Cluster with Rancher Prime"
+    speaker: Adela Bobovska
+    abstract: >
+      When a regulated public-sector operator responsible for essential national infrastructure set out to deploy a mission-critical application across three independent datacenters, the requirements quickly exceeded what traditional high-availability designs could offer. The platform had to meet strict compliance rules, tolerate site-level failures and behave predictably under degraded network conditions while staying within modern virtualization and multi-site orchestration limits. This session shows how the SUSE Rancher Suite — including SUSE Virtualization, Rancher Prime, SUSE Storage, SUSE Security, SUSE Observability and SLE Micro — was used to build a stretched multi-site environment managed centrally. We outline the architecture, the replication and disaster-recovery model, the network design and how predictable failover was validated. We also highlight how the HPE–SUSE partnership enabled the project and the lessons learned running SUSE Virtualization across multiple datacenters.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 2
+    length: 30
+    tags: ["high-availability-solutions", "virtualization"]
+
+  - id: "CUSTOMER-1264"
+    title: "Building out Supermicro's AI Factory with SUSE AI"
+    speaker: "Ugur Uygan, Alan Leberknight"
+    abstract: >
+      Supermicro is advancing the frontier of large-scale artificial intelligence infrastructure by designing an AI Factory powered by SUSE AI, capable of scaling from 100 to 2,000 GPU nodes. This initiative addresses the growing demand for reproducible, secure, and high‑performance AI workloads across industries. By leveraging SUSE's enterprise‑grade Linux, virtualization, and Kubernetes orchestration, the AI Factory provides a modular foundation for training, inference, and deployment pipelines at unprecedented scale. At 100 GPUs, organizations can prototype advanced models; at 1,000 GPUs, they can train large‑scale foundation models; and at 2,000 GPUs, they can operate full AI factories capable of supporting multi‑tenant, cross‑industry workloads. Together, Supermicro and SUSE AI deliver a scalable, secure, and future‑proof platform for industrial AI innovation.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 3
+    length: 30
+    tags: ["high-availability-solutions", "ai"]
+
+  - id: "BUSINESS-1060"
+    title: "Sailing Smoothly: Single-Pane Kubernetes Management on the High Seas"
+    speaker: Nelson Kinsford
+    abstract: >
+      Running mission-critical, customer-facing applications on a fleet of floating data centers presents one of the most unique and challenging IT environments in the world. Connectivity is intermittent, resources are finite, and the need for high availability is paramount.
+
+      This session is a business overview detailing the challenges of managing distributed, on-ship compute for essential passenger services. We will discuss how a leading global cruise operator partnered with SUSE to deploy and centrally manage RKE2 Kubernetes clusters across their fleet.
+
+      You'll learn how SUSE's single-pane management solution provided the simplified operations and consistent security needed to "sail smoothly," delivering reliable IT services from any port in the world. Decision makers will gain insight into transforming complex, distributed deployments into a manageable, cost-efficient operation.
+    track: Business Insights
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Karlin 4
+    length: 30
+    tags: ["kubernetes"]
+
+  - id: "OVERVIEW-1375"
+    title: "Hybrid SAP Data Center Integration with Edge Integration Cell, and SUSE Powered by Agentic AI"
+    speaker: "Udo Paltzer, Sabine Soellheim"
+    abstract: >
+      Explore the future of hybrid SAP integration, focusing on deploying the SAP Edge Integration Cell on SUSE Rancher for resilient, containerized operations at the network edge. This session details how to leverage agentic AI to automate complex SAP landscape tasks, from proactive monitoring and self-healing of integrations to optimizing data flows between on-premise SAP systems, cloud services, and the Edge Integration Cell. Learn how this fusion of robust container management, hybrid integration, and autonomous intelligence drastically reduces TCO and enhances the real-time decision-making capabilities of mission-critical SAP applications.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["sap-solutions", "ai"]
+
+  - id: "CUSTOMER-1233"
+    title: Deployment of the First Kazakhstani National Supercluster
+    speaker: "Tamerlan Abu, Bas van Kampen"
+    abstract: >
+      We'll tell a story about the deployment of the First Kazakhstani National Supercluster from the first perspective together with Bas van Kampen - Lead Architect - EMEA Consulting. We have used SUSE Harvester as a virtualization solution to run inference, train AI model and handout gpus to startups and government entities.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "ai"]
+
+  - id: "OVERVIEW-1312"
+    title: "Developer Joy, Platform Peace: Aligning Local Development and Production"
+    speaker: Nuno Do Carmo
+    abstract: >
+      In the modern software lifecycle, the "it works on my machine" excuse is a major bottleneck. Disconnects between local development environments and production realities create friction, security risks, and delayed releases. SUSE Rancher Dev Access addresses this head-on by unifying the developer experience with platform engineering standards, ensuring that innovation doesn't come at the cost of stability or security.
+
+      This session combines a strategic overview with a live technical demonstration of SUSE Rancher Dev Access. This session will move beyond standard marketing slides and show in a live demo, how the synergy between Application Collection and Rancher Desktop creates a developer-centric experience that respects production realities. By enabling teams to target the exact K3s versions used in production and leverage the same trusted content, you can massively accelerate time-to-market and tremendously reduce the friction with Platform Engineering teams. Whether you are a Manager seeking to streamline workflows or an executive aiming to de-risk your supply chain, you will learn how to unify your development lifecycle from the start.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "14:45"
+    end_time: "15:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["devops", "open-source"]
+
+  - id: "TUTORIAL-1130"
+    title: "Unlock Your Data Center: Maximize Efficiency and Innovation with SUSE Virtualization"
+    speaker: "Alejandro Bonilla, Jeff Lindholm"
+    abstract: >
+      Are you looking to modernize your data center but feel stuck between managing essential, yet, legacy virtual machines and adopting new, container-based applications? This session is your bridge to the future. Discover how SUSE Virtualization, built as a cloud-native hypervisor platform, eliminates the silos between old and new by managing both VMs and Kubernetes clusters from a single, unified console - Accelerating Modernization.
+
+      We will focus on how migrating to this modern, secure, and efficient stack delivers immediate and long-term value. Learn how SUSE Virtualization, powered by its deep integration with Rancher, helps you:
+
+      Maximize Efficiency: Simplify your operations and reduce your data center footprint by managing everything from VMs to containers with one tool.
+
+      Empower Your Teams: Provide a smooth modernization path for teams familiar with virtualization to start leveraging the power of Kubernetes and containers at their own pace.
+
+      Boost Service Availability: Leverage cloud-native principles like topology awareness to build resilient, self-healing applications that maximize uptime.
+
+      Gain Cloud-Like Agility: Instantly provision resources, manage quotas, and integrate high-performance storage with the same ease you'd expect from a public cloud.
+
+      Join us to see how you can foster innovation, enhance security, and transform your IT infrastructure into a true engine for business growth.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Karlin 2
+    length: 30
+    tags: ["virtualization", "containers"]
+
+  - id: "BUSINESS-1219"
+    title: "Model Context Protocol (MCP) for Everyone: Connecting AI to the World"
+    speaker: "Matthias Eckermann, Anna Maresova"
+    abstract: >
+      Business users are eager to unlock the power of AI by connecting it to their daily applications and data, but Sysadmins—already stretched thin—simply do not have the time to build and maintain endless custom integrations. This bottleneck creates a gap between business ambition and IT capacity. In this session, we introduce the Model Context Protocol (MCP), an open standard designed to bridge this divide. We will describe how MCP acts as a universal connector, empowering business users to integrate AI capabilities instantly while saving Sysadmins from the burden of managing bespoke connections. Join us to learn how to democratize AI access across your organization without compromising on security or time.
+    track: Business Insights
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Karlin 3
+    length: 30
+    tags: ["ai", "automation"]
+
+  - id: "CUSTOMER-1409"
+    title: Driving telco cloud modernization with Orange Telco Cloud and SUSE
+    speaker: Dominique Vo
+    abstract: >
+      Since 2020, Orange has been deploying an innovative cloud platform to host network functions in live production across multiple countries in the MEA and Europe regions. Hear from Orange's Telco Cloud product team and learn how they leveraged the open source project Sylva for production deployment of CaaS services. Find out how SUSE played a key role in this transformative journey. Additionally, you'll have testimonials on recent Cloud-Native Network Function rollouts with various NF vendors this cloud journey at scale.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Karlin 4
+    length: 30
+    tags: ["cloud-infrastructure", "edge-computing"]
+
+  - id: "TUTORIAL-1114"
+    title: "Architecting Success: Deploying and Optimizing SUSE Multi-Linux Manager in the Cloud"
+    speaker: "Graham Hares, Stephen Mogg"
+    abstract: >
+      You already know that Multi-Linux Manager (MLM/SUSE Manager) is the indispensable tool for managing your diverse Linux estate, providing a single pane of glass to patch, update, and audit SUSE Enterprise Linux as well as 16 other Linux distributions. But it's 2026, and your critical workloads have shifted to the cloud and hybrid environments, meaning your MLM deployment needs to move with them. The question is: How do you successfully transition your core Linux management tool to the cloud?
+
+      This session aims to deliver the essential knowledge you need for a successful cloud-based MLM implementation.
+
+      We will cover the critical architectural and operational decisions, including:
+
+      - Deployment Options: A clear breakdown of the available technical and commercial options for deploying MLM on major cloud platforms.
+
+      - Configuration Best Practices: Guidance on optimising network topology, scaling components, and ensuring availability.
+
+      - Hybrid Integration: Key considerations for connecting and managing your on-premises Linux workloads alongside your cloud-hosted infrastructure.
+
+      - Hidden Gotchas: Insider tips on what you must know to ensure your transition is smooth and your implementation is a success.
+
+      Don't let cloud complexity stall your Linux management strategy. Join us to learn about Multi-Linux Manager deployments in the cloud
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["cloud-infrastructure", "linux-systems-management"]
+
+  - id: "OVERVIEW-1386"
+    title: "Accelerating Enterprise Cloud Adoption: The SUSE + AWS Value Proposition"
+    speaker: "David Rocha, Kal Katuri"
+    abstract: >
+      Discover how SUSE's enterprise Linux solutions combined with AWS's cloud infrastructure deliver unmatched value for customers migrating mission-critical workloads. This session explores how SUSE Linux Enterprise Server (SLES) and SUSE Rancher enable seamless cloud migration, modernization, and container orchestration on AWS. Attendees will understand the "Better Together" story that positions SUSE + AWS as the optimal path for enterprise digital transformation, particularly for SAP workloads, Kubernetes management, and hybrid cloud strategies.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "enterprise-linux"]
+
+  - id: "TUTORIAL-1099"
+    title: "Digital Sovereignty Meets Cost Efficiency: How SUSE Public Cloud Update Infrastructure Balances Both"
+    speaker: Devesh Sharma
+    abstract: >
+      Digital sovereignty is no longer optional, but building sovereign-aware cloud architectures can quickly become expensive. As requirements expand across regions and industries, organizations must ensure that their infrastructure meets data residency, jurisdictional boundaries, and compliance rules without compromising performance or cost efficiency.
+
+      To balance these demands, SUSE's Public Cloud Update Infrastructure uses a Hub-Spoke deployment model. This session breaks down how we deploy dedicated in-region hubs where required by traffic or regulatory constraints, and route lower-traffic regions to nearby hubs where sovereignty requirements allow. The result: compliance, performance, and cost control. Attendees will learn practical decision patterns to evaluate sovereignty, latency, and cost trade-offs when designing multi-region architectures.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "16:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["digital-sovereignty"]
+
+  - id: "ROADMAP-1419"
+    title: "SUSE Rancher Prime Roadmap: What Drives Our Cloud Native Platform Vision"
+    speaker: "David Stauffer, Mark Bakker"
+    abstract: >
+      An interactive session to learn where we are headed and what defines our Cloud native platform vision. Exchange in live discussion thoughts and feedback directly with the Product Leadership.
+    track: Product Roadmap
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "15:45"
+    end_time: "17:15"
+    room: Palmovka 4
+    length: 90
+    tags: ["containers"]
+
+  - id: "CERTIFICATION-1448"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "18:30"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "HOL-1434"
+    title: Remote Host Onboarding with SUSE Edge
+    speaker: Pete Hakkarainen
+    abstract: >
+      SUSE Edge provides three different cluster provisioning methods. One of them is called Phonehome Provisioning, where the SUSE Edge Management Cluster has SUSE Rancher Prime deployed and with Elemental it allows Kubernetes clusters in remote locations to be provisioned with remote onboarding.
+
+      For the downstream cluster nodes, a bootable ISO disk image is created with Edge Image Builder based on the yaml manifest which contains the Elemental component configuration. Once the remote node is booted with the ISO, SUSE Linux Micro operating system is bootstrapped, and an Elemental Agent is deployed to the node. The agent runs and registers to Elemental by “phoning home”. After the node registration, SUSE Rancher Prime can be used to provision Kubernetes clusters on the nodes.
+
+      In this hands-on session new cluster nodes will be bootstrapped with a bootable disk image created by Edge Image Builder. Then SUSE Rancher Prime and Elemental will be used to provision Kubernetes to the registered cluster nodes.
+    track: Hands on Lab
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "18:30"
+    room: Karlin 1
+    length: 120
+    tags: []
+
+  - id: "CUSTOMER-1196"
+    title: Managed IaaS based on SUSE Virtualization as a Service 'EdgAIR'
+    speaker: "Thore Bahr, Martin Junger"
+    abstract: >
+      This presentation introduces EdgAIR, a Managed Infrastructure-as-a-Service (IaaS) solution provided by T-Systems (Deutsche Telekom IT Solutions) utilizing SUSE Virtualization technology. The session outlines the service architecture, component offerings, and real-world applications designed to address enterprise edge computing needs.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 2
+    length: 30
+    tags: ["digital-sovereignty", "virtualization"]
+
+  - id: "TUTORIAL-1374"
+    title: ClearML and SUSE AI enable Shared Compute for Enterprises
+    speaker: "Martina Ilieva, Erez Schnaider"
+    abstract: >
+      Enterprises adopting AI often struggle to share limited compute resources across teams. This session explores how SUSE AI and ClearML simplify resource management and improve GPU usage in multi-tenant environments.
+
+      We will outline how ClearML extends Kubernetes' native orchestration to provide better visibility and control, how RKE2 delivers production-grade orchestration with strong security and consistent operations across clusters, how ClearML uses k3k for its secure dynamic multi-tenancy architecture and how it adds GPU as a Service, and Model as a Service to support growing AI workloads.
+
+      Attendees will learn how these tools help organizations access and share compute, define resource quotas, reduce idle time, and increase overall utilization.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 3
+    length: 30
+    tags: ["kubernetes", "ai"]
+
+  - id: "TUTORIAL-1277"
+    title: "30,000 Locations: A Reference Architecture for Kubernetes at the Retail Edge"
+    speaker: "Ricardo Mateus, Silvio Moioli"
+    abstract: >
+      Retail environments present unique challenges: limited bandwidth, non-technical staff, and the need to manage tens of thousands of locations cost-effectively. Join the SUSE Rancher and MLM architects as we unveil a new reference architecture designed specifically for the retail edge. We will dissect the decision matrix between Rancher and Multi-Linux Manager (MLM), explaining why MLM is the preferred choice for massive “same-ish” deployments. Learn how to leverage Salt for full-stack GitOps automation, from OS to RKE2 upgrades, and discover strategies for hierarchical observability using Prometheus federation. This session provides a proven blueprint for reliable, low-touch operations at scale.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "kubernetes"]
+
+  - id: "OVERVIEW-1372"
+    title: "Zero Trust Infrastructure: Extend Security from the Software Supply Chain to the Execution Platform"
+    speaker: "Sebastian Martinez Torregrosa, Knut Trepte"
+    abstract: >
+      Traditional Zero Trust models focus on "who" is accessing the network but ignore "what" is running. As regulations like NIS2 and the Cyber Resilience Act (CRA) introduce direct executive liability, implicit trust in your software provider and infrastructure is no longer an option.
+
+      Join this session to discover Zero Trust Infrastructure (ZTI). We will demonstrate how to extend security beyond the perimeter by enforcing trust at two critical points: the Software Supply Chain (verifying origin via machine-verifiable SBOMs and EAL4+ certification) and the Execution Platform (protecting Datain-Use via Confidential Computing and Secure Enclaves verified preexecution).
+
+      Learn how to replace "blind trust" with verifiable, cryptographic proof that ensures your workloads remain secure from build to runtime.
+    track: Product Overview
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 1
+    length: 30
+    tags: ["security", "virtualization"]
+
+  - id: "CUSTOMER-1326"
+    title: "From Mail Carrier to Shopping Cart: Correios' Digital Transformation and the Building of a High-Performance E-commerce Platform"
+    speaker: "Adriano Araujo, Gabriel Lins"
+    abstract: >
+      How a 300-year-old company evolved from a traditional postal service to a significant player in the Brazilian e-commerce market.
+
+      In this session, we will detail the modern architecture and the guiding principles behind the construction of Correios's platform, highlighting how Cloud Native technologies and the resilience of the infrastructure were crucial in supporting peak demands. Understand the role of open source innovation in expanding services and redefining the customer experience.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 2
+    length: 30
+    tags: ["kubernetes", "devsecops"]
+
+  - id: "TUTORIAL-1088"
+    title: "But Can It Run Doom? An App-Centric Approach to a Kubernetes Platform."
+    speaker: "Michiel Peene, Jan Ebrard"
+    abstract: >
+      A successful Kubernetes platform begins and ends with the application running on top of it. In this fun and insightful session, Michiel Peene and Jan Ebrard will share real-life examples and lessons learned about designing platforms that actually serve developer needs—through the lens of a 1993 first person shooter.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "16:30"
+    end_time: "17:00"
+    room: Palmovka 3
+    length: 30
+    tags: ["devops", "kubernetes"]
+
+  - id: "TUTORIAL-1172"
+    title: SUSE Virtualization on PRIMERGY — Simplified by the Deployment Engine
+    speaker: "Mark Gonnelly, João Correia"
+    abstract: >
+      Greenfield bare metal builds drive high effort especially in edge and lights out datacenter environments. Repeatability and consistency are key. Tools exist to expand environments, challenges arise when starting from scratch.
+      Our lightweight Deployment Engine based on SLE Micro (6.1) automates both SUSE Virtualization and bare metal SLE Micro deployments for onward use as bare metal SUSE Rancher Prime hosts. The deployment engine ships as a single qcow2 image and contains installation files for both SUSE Virtualization and SLE Micro to allow a disconnected build.
+      Configuration is controlled by two text files (environmental data/per physical server information) used to build SUSE Virtualization yaml, SLE Micro Ignition files and iPXE configuration. Servers are managed via IPMI to control PXE boot.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "17:15"
+    end_time: "17:45"
+    room: Karlin 2
+    length: 30
+    tags: ["automation"]
+
+  - id: "TUTORIAL-1067"
+    title: "Layered AI Architecture with AWS, Denodo and SUSE"
+    speaker: "David Rocha, Ted Jones"
+    abstract: >
+      This session presents a blueprint for engineering a robust, scalable, and secure layered AI architecture by synergistically combining AWS cloud services, the Denodo Logical Data Management platform, and SUSE AI solutions. We detail a modular architecture that strategically separates the data plane, the data integration layer, and the model execution environment to enhance agility, governance, and time-to-value for AI initiatives.
+
+      The architecture leverages AWS for its foundational compute, storage (e.g., S3, EC2), and specialized AI/ML services (e.g., SageMaker, Bedrock). The critical data integration and abstraction layer is managed by Denodo, which virtualizes data across disparate, often siloed sources. Denodo provides a unified, secure, and real-time data view, crucial for feeding high-quality, up-to-date data to AI models without the latency and complexity of physical data replication.
+
+      Completing the stack, SUSE AI provides the secure, reliable, and high-performance operating system and enterprise management for the entire AI lifecycle. This includes managing and scaling the underlying infrastructure—from hybrid cloud deployments to edge computing—using SUSE Linux Enterprise and SUSE Rancher Prime, and utilizing SUSE's specialized AI tools to streamline the deployment and management of model training and inference pipelines.
+
+      Attendees will learn how this specific technology stack addresses common AI implementation challenges: data fragmentation, high latency in data access, security and compliance risks, and the portability of AI workloads. Key takeaways will include practical strategies for deploying model training and inference pipelines, optimizing data access for demanding AI workloads, and maintaining enterprise-grade security and stability across the entire AI/ML lifecycle.
+    track: "Technical Tutorial / \"How To\""
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "17:15"
+    end_time: "17:45"
+    room: Karlin 3
+    length: 30
+    tags: ["cloud-infrastructure", "ai"]
+
+  - id: "CUSTOMER-1150"
+    title: "Streamlining Image Distribution: Merck KGaA Darmstadt's Success with SUSE Private Registry"
+    speaker: "Shashank Krishnamurthy, Hernan Schmidt"
+    abstract: >
+      Merck KGaA Darmstadt is an Early Adopter of the SUSE Private Registry. As previous Harbor users, they faced a number of operational challenges. By upgrading to SUSE Private Registry, and pairing it with the content available via SUSE Application Collection, Merck KGaA Darmstadt was able to streamline the distribution and deployment of images across their geographical locations and better serve their development teams.
+    track: Customer Experience
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "17:15"
+    end_time: "17:45"
+    room: Palmovka 2
+    length: 30
+    tags: ["application-delivery", "containers"]
+
+  - id: "BUSINESS-1360"
+    title: "Accelerating Telecom Innovation: Dell Technologies & SUSE Reference Architecture"
+    speaker: "Gerson Guevara, Timo Jokiaho, Eric Van Vliet"
+    abstract: >
+      Dell Technologies and SUSE deliver a joint solution featuring a telecom-optimized computing platform that empowers operators and network vendors to accelerate network modernization and drive innovation.
+    track: Business Insights
+    day: "Wednesday"
+    date: "2026-04-22"
+    time: "17:15"
+    end_time: "17:45"
+    room: Palmovka 3
+    length: 30
+    tags: ["edge-computing"]
+
+  - id: "CERTIFICATION-1449"
+    title: SUSE Certification Exams
+    speaker: ""
+    abstract: >
+      New Exams at SUSECON:
+
+      SCA in SUSE Linux Enterprise Server 16
+
+      SCA in Rancher Kubernetes Engine 2
+
+      Existing Exams that will also be offered:
+
+      SCA in SUSE Rancher Prime
+
+      SCDS in SUSE Edge
+
+      SCDS in SUSE AI
+
+      SCA in SUSE Observability
+
+      SCA in Longhorn
+
+      SCDS in Rancher Kubernetes Engine 2
+
+      SCA in SUSE Linux Enterprise Server 15
+
+      SCDS in SUSE Multi-Linux Manager
+
+      SCA in SUSE Multi-Linux Manager
+    track: Certification Exams
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "13:00"
+    room: Florenc 1
+    length: 120
+    tags: []
+
+  - id: "HOL-1431"
+    title: Create a Solid Foundation for AI Workloads with SUSE AI
+    speaker: Ron Terry
+    abstract: >
+      With the rise in demand to leverage AI, finding a solid platform on which to run the AI workloads can be a challenge. SUSE AI provides this platform and is easily configured to run a wide range of AI workloads.
+
+      In this session you will learn how to install an RKE2 cluster with commonly required components to provide a solid foundation on which AI workloads can be run. After the solid AI-ready cluster has been installed various different AI workloads will be installed. Metrics for the underlying cluster and the workloads will then be viewed in SUSE Observability.
+
+      By the end of the session attendees will understand the requirements for running AI workloads and will be able to install a SUSE AI cluster that is ready for AI workloads to be deployed on it.
+    track: Hands on Lab
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "13:00"
+    room: Florenc 2
+    length: 120
+    tags: []
+
+  - id: "TUTORIAL-1090"
+    title: Legacy App Migration from VMWare to SUSE Rancher in less than 30 Min
+    speaker: "Mark Wells, DJ James, Stefan Raspl"
+    abstract: >
+      IBM builds AI based Code Modernization tools that work with IBM Automation Assets built on top of Rancher Carbine that results in a VMware App from 1997 based on Java 6 and Tomcat 1 being moved to Java 21/Jakarta, reprocessed into a secure container architecture and deployed on Rancher Harvester in less than 30 min live. This is the basis for how IBM moves legacy workloads off of VMware to modern container platforms like Rancher Harvester giving customers time to re-engineer and modernize their application while not having to pay for or maintain the legacy VMware architecture.
+    track: "Technical Tutorial / \"How To\""
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 2
+    length: 30
+    tags: ["devsecops", "automation"]
+
+  - id: "CUSTOMER-1072"
+    title: "1+1 = 5: How SUSE Supports Secure AI Solutions for Modern Medicine."
+    speaker: "Uwe Henker, Manuel Sammeth"
+    abstract: >
+      When medical software innovation meets cloud excellence, the result is exponential. In this session, Dr. Uwe Henker (INDAMED GmbH) and Manuel Sammeth (FIS-ASP GmbH) present how a partnership between a healthcare software provider and a trusted hosting expert led to an AI-powered solution that supports physicians in clinical decisions, documentation, and workflows. Hosted securely on SUSE-based container infrastructure in FIS-ASP's German data center, the solution meets top standards for data protection and EU healthcare compliance. Guided by “1 + 1 = 5,” this talk shows how domain-driven development and scalable cloud operations deliver future-ready AI for modern medicine — made in Germany.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 3
+    length: 30
+    tags: ["cloud-infrastructure", "ai"]
+
+  - id: "BUSINESS-1251"
+    title: Making Big Bets or Managing Risk with your Architectural Investments
+    speaker: Margaret Dawson
+    abstract: >
+      Are you working to standardize certain layers of your architecture or do the opposite and ensure you don't put all your eggs in one basket to ensure business continuity. Many organizations are looking to consolidate vendors and making big bets on a single flavor of Linux, Kubernetes or public cloud. While others are taking a multi-cloud, multi-vendor approach. What are your top priorities and how can you make architectural decisions to align to your overall strategy? In this session, we will discuss the pros and cons of standardization versus diversification or “heterogenizing” your IT. Providing real-world examples, we will illustrate how the move to a more composable architecture allows us to align workloads to the right infrastructure. This is a vendor-agnostic presentation and will be focused on technology areas and trends, including how AI influences our architectural decisions.
+
+      Attendees will learn about:
+
+      - The move toward standardization and sovereignty
+
+      - Data and stories around need for resiliency and diversification
+
+      - What is a composable architecture and why is it a smart strategy?
+
+      - How to align workloads to the right infrastructure
+    track: Business Insights
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Karlin 4
+    length: 30
+    tags: ["hybrid-multi-cloud-technologies", "business-applications"]
+
+  - id: "CUSTOMER-1189"
+    title: How Ericsson powers critical telecom workloads with SUSE Linux Enterprise Server and Premium Support in production
+    speaker: "Andreas Taschner, Ganesh Vasudevan"
+    abstract: >
+      Ericsson's Kubernetes distribution manages and orchestrates containerised applications deployed in telco operator networks. The solution is based on open source Kubernetes running on SLES. It is the de-facto container platform for Ericsson's cloud-native commercial offering with various Ericsson cloud-native applications. This is a system verified solution ensuring quality and fast time to market for telco grade deployments.
+
+      Running Kubernetes on SUSE Linux delivers consistency, enterprise-grade stability and powerful tuning options.
+
+      In this talk we will present how Ericsson's solution on SUSE Linux is developed, deployed and maintained at customer data centres. We will also cover scenarios where SUSE Premium Support can be leveraged effectively, including guidance on when to escalate complex node, kernel or networking issues.
+
+      SUSE and Ericsson have a large number of customer production deployments of clusters hosting various Ericsson applications such as 5G Core around the globe.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 1
+    length: 30
+    tags: ["microservices", "support-maintenance"]
+
+  - id: "OVERVIEW-1244"
+    title: "From Virtualization to Sovereign Cloud: A Practical Modernization Path for MSPs with SUSE"
+    speaker: "Gus Varela, Roberto Isidoro"
+    abstract: >
+      Managed Service Providers are navigating a pivotal transition as customers demand sovereign solutions, the virtualization landscape shifts, and modernization becomes essential for competitiveness. This session provides practical guidance for MSPs looking to evolve their infrastructure, SAP environments, and operational models using open and sovereign technologies from SUSE.
+
+      We will explore how SUSE Virtualization helps consolidate and modernize legacy platforms; how SLES KVM offers a stable, cost-effective, and modern foundation for virtualized SAP workloads enhanced through Trento's MCP capabilities; and how SUSE AI's approach transforms day-to-day operations with autonomous troubleshooting and policy-driven execution. Attendees will leave with actionable recommendations to reduce costs, increase resilience, integrate AI responsibly, and scale service offerings across hybrid and sovereign cloud environments.
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud-infrastructure", "ai"]
+
+  - id: "CUSTOMER-1401"
+    title: "Sovereignty: Regaining control of our own government data with NextCloud"
+    speaker: "Pieter Steendam, Arnold van Vleeren"
+    abstract: >
+      How does one (re)gain ownership of and control over data, in this constantly politically changing world?
+
+      Follow us, the Dutch Ministry of Economic Affairs in our journey to regain sovereignty back for crucial data with NextCloud running on Rancher Kubernetes
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "11:30"
+    room: Palmovka 3
+    length: 30
+    tags: ["hybrid-multi-cloud-technologies"]
+
+  - id: "ROADMAP-1227"
+    title: "SUSE Edge and Telco: Vision, Roadmap, and Ecosystem"
+    speaker: "Vince Matev, Joachim Werner, Atanas Dinov, Gary Mackenzie"
+    abstract: >
+      From Retail to Manufacturing, Health Care, or Transportation, SUSE brings cloud-native infrastructure to the edge. In this session we are going to explain our vision for truly scalable, secure, and agile cloud-native software deployment at the edge, give an overview of typical use cases we are running into, and give a sneak preview on what is on the roadmap. We are also going to give insights into what's going on in our edge software and hardware partner ecosystem.
+    track: Product Roadmap
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:00"
+    end_time: "12:15"
+    room: Palmovka 4
+    length: 75
+    tags: ["edge-computing", "automation"]
+
+  - id: "OVERVIEW-1109"
+    title: "Unleashing Cloud-Native Power: AmpereOne, SUSE Virtualization, and the Future of ARM Nested Virtualization"
+    speaker: "Peter Pouliot, Alejandro Bonilla"
+    abstract: >
+      The transition to energy-efficient, high-density compute is accelerating, with the AmpereOne ARM-based server chip emerging as a key platform for next-generation cloud infrastructure. This session dives deep into the validated, cloud-native software stack built around SUSE Virtualization (Harvester) and SUSE Rancher, demonstrating how to achieve seamless, unified management of both Virtual Machines (VMs) and containers on Ampere's Arm64 architecture.
+
+      Attendees will learn how this integrated solution leverages the inherent advantages of AmpereOne—single-threaded cores for predictable performance and industry-leading power efficiency—to create a modern, hyperconverged infrastructure (HCI).
+
+      Crucially, we will explore a significant technical advancement in the underlying Linux kernel: the support for ARMv8.4 Nested Virtualization added in the Linux 6.12 kernel. This new capability is specifically enhanced with support for the FEAT_ATS1A (Address Translation) family of instructions. We will unpack the practical impact of this feature, which dramatically improves the efficiency and performance of nested virtual environments (L1 hypervisors running L2 guests), making complex use cases like development/testing environments, cloud-in-cloud scenarios, and microVMs economically viable on the AmpereOne platform.
+
+      Join us to see how the combination of AmpereOne silicon and the SUSE cloud-native stack, fortified by cutting-edge kernel virtualization features, is setting the new standard for performance, efficiency, and scalability in the modern data center.
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 2
+    length: 30
+    tags: ["cloud-infrastructure", "enterprise-linux"]
+
+  - id: "OVERVIEW-1340"
+    title: Scaling GenAI-Powered e-Learning with SUSE AI Suite at ITS Umbria Made in Italy
+    speaker: "Leonardo Trentavizi, Luca Barzè"
+    abstract: >
+      In this session we share how ITS Umbria Academy implemented an AI-driven e-learning platform built on Laravel and powered end-to-end by SUSE AI Suite. Starting from static, hard-to-update materials, we delivered a interactive web application students interact with an AI Teacher which helps them in post-lecture learning. From the teacher side, the web app allows to automatically load, summarize and publish teaching material in the e-learning webpage. The dedicated GenAI chatbots for students and faculty are domain-constrained prompts, able to provide traceable citations and exposed via a simple course page and SSO access. We will walk through the target architecture, deployment choices, and how SUSE AI's Kubernetes foundation, security-by-design stack and GPU orchestration let us scale LLM workloads safely while keeping the Laravel monolith clean and maintainable. We close with lessons learned on governance, performance and how the same pattern can be reused for new courses and institutes.
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 3
+    length: 30
+    tags: ["kubernetes", "ai"]
+
+  - id: "TUTORIAL-1110"
+    title: "SUSE Virtual Clusters in Action: Simplifying Kubernetes Multi-Tenancy"
+    speaker: "Enrico Candino, Hussein Galal"
+    abstract: >
+      Providing separate Kubernetes environments for multiple teams, developers, or customers can quickly become costly and complex. While namespaces offer basic separation, they fall short when it comes to strong isolation and governance—key requirements for true multi-tenancy.
+
+      Enter SUSE Virtual Clusters, a virtual cluster solution built on K3s that reimagines how we can deliver isolated Kubernetes environments at scale. In this session, the project's maintainers will demonstrate how k3k creates lightweight, fully functional K3s clusters in two modes: Virtual Mode, where clusters run inside pods, and Shared Mode, where workloads run directly on the host for maximum efficiency.
+
+      We'll also introduce Virtual Cluster Policies, a governance layer that enables administrators to define boundaries and control behavior across all tenant clusters—such as limiting node creation or managing network access.
+
+      Join us to see how Virtual Clusters using k3k enables organizations to offer self-service Kubernetes environments that are fast to create, secure by design, and highly scalable—without the operational overhead of traditional clusters.
+    track: "Technical Tutorial / \"How To\""
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Karlin 4
+    length: 30
+    tags: ["kubernetes", "containers"]
+
+  - id: "TUTORIAL-1070"
+    title: SUSE Multi-Linux Manager best practices from the field
+    speaker: Christian Stankowic
+    abstract: >
+      When it comes to managing comprehensive Linux infrastructure, SUSE Multi-Linux Manager is a very common utility. In comparison with other management suites, it not only supports SUSE Linux but also additional widespread Linux distributions and offers a simple way to administer systems efficiently. After being forked from Spacewalk in 2018, a modern communication and configuration stack based on SaltStack has been implemented. In recent releases, the project moved to a Container-based setup.
+
+      In this session we will cover lessons learned from 10 years of systems management. We will see best practices from the field such as efficiently setting up Uyuni hosts and mapping system landscapes. Also, we will learn how to migrate legacy installations to containers and how Uyuni fits in DevOps scenarios.
+    track: "Technical Tutorial / \"How To\""
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 1
+    length: 30
+    tags: ["automation"]
+
+  - id: "OVERVIEW-1359"
+    title: "The journey to Multi-Cloud is a MUST. The Why, The How, The Architecture, and Debates on implementation "
+    speaker: Menny Tsarfati
+    abstract: >
+      There is much talk about sovereignty, information security, cost reduction, compliance, regulations, and operations, and the truth must be said. If you didn't plan it that way, it would turn into chaos.
+
+      "We can't solve problems using the same way of thinking that we used when we created them." (Einstein)
+
+      The journey to multi-cloud is the responsibility of business and technology managers within their organizations.
+
+      Sometimes, in the life cycle of systems and organizations, there are points of rethinking. Designing systems that will respond to higher demands is the organization's duty to itself; otherwise, it will always be left with excuses.
+
+      In this session, I will present how Rancher Prime Suite, with an emphasis on Application Collection, Edge, and AI, will enable the design and implementation of a multi-cloud platform that will accompany you for the coming years. Implementation of flexible and adaptable platform while maintaining uncompromising resilience and information security.
+
+      The session will discuss the reference architecture and how it will serve the future. How it is connected and enables the (visible) future strategy.
+
+      I'll talk about Multi Cloud reference architecture, how it's measured, and its alignment to the Organization Strategy.
+
+      • How to formulate a multi-cloud strategy
+
+      • Common mistakes
+
+      • How to Turn This Theory into Practice
+
+      • Reference architecture
+
+      • Cyber Considerations
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 2
+    length: 30
+    tags: ["application-delivery", "cloud"]
+
+  - id: "BUSINESS-1136"
+    title: "Open Source for Global Good: How SUSE Linux Became the First Commercial Linux Digital Public Good"
+    speaker: "Débora Noronha, Brendan Bulmer"
+    abstract: >
+      Digital Public Goods (DPGs) are foundational to accelerating the UN's 2030 Sustainable Development Goals. This session will detail the cross-functional effort that led to SUSE Linux Enterprise Server (SLES) becoming the first and only commercial Linux product to be recognized as a DPG by the UN-endorsed Digital Public Goods Alliance.
+
+      We will explore the strict and independent process that validated SLES's adherence to the highest standards of privacy, security, open-source principles, and the crucial 'do no harm' criterion. This designation is a formal confirmation that SLES is a reliable building block for solving major global challenges, directly contributing to Sustainable Development Goal Nine: Industry, Innovation, and Infrastructure.
+
+      Attendees will walk away understanding the strategic value of the DPG status, which gives assets credibility with customers, governments and funding institutions seeking proven, scalable solutions. They will also learn about how choosing SLES positions their own infrastructure to support global social good, sustainability, and digital sovereignty initiatives. Discover how SUSE's dedication to true open source is transforming technology into a force for sustainable development.
+    track: Business Insights
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "11:45"
+    end_time: "12:15"
+    room: Palmovka 3
+    length: 30
+    tags: ["open-source"]
+
+  - id: "TUTORIAL-1105"
+    title: Virtualizing SAP Workloads with SUSE KVM
+    speaker: Arne Wolf
+    abstract: >
+      A detailed overview on virtualising SAP workloads with SUSE KVM with a focus on virtualising SAP HANA with SUSE KVM.
+    track: "Technical Tutorial / \"How To\""
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 2
+    length: 30
+    tags: ["sap-solutions", "virtualization"]
+
+  - id: "CUSTOMER-1395"
+    title: Clean Core Strategy with Hybrid Integration and AI
+    speaker: "Bernd Bätz, Kevin Klinger"
+    abstract: >
+      Discover how FIS Group is transforming SAP operations with a clean core strategy powered by SAP Integration Suite, Edge Integration Cell, and private AI innovations.
+
+      What's in it for you?
+
+      • Proven strategies for PO/PI migration using edge technologies
+
+      • Real-world AI use cases that automate and optimize SAP processes
+
+      • Best practices to boost performance, scalability, and agility with edge computing
+
+      Featuring insights from: Bernd Bätz – FIS-ASP, Friedrich Krey – SUSE Software Solutions
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 3
+    length: 30
+    tags: ["sap-solutions", "ai"]
+
+  - id: "CUSTOMER-1261"
+    title: "Powering Large supermarket chain group's Digital Acceleration: Cloud-Native Evolution and Edge Expansion"
+    speaker: "Haibo LIU, Griff HU, Jimmie Hong"
+    abstract: >
+      The supermarket group is pushing forward a major digital modernization effort to keep pace with its fast-growing business. This session shares the key milestones the customer has achieved together with SUSE as it builds a secure, resilient, and future-ready cloud-native foundation. We will walk through this large supermarket chain group's next-generation cloud-native architecture and how it is improving application agility, daily operational efficiency, and the reliability required to run services at massive scale. The session will also introduce the customer's ambitious “Thousand Warehouses, Hundred Stores” EDGE plan, which brings computing power closer to distribution centers, stores, and last-mile locations to support fast response operations.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:00"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "business-applications"]
+
+  - id: "OVERVIEW-1061"
+    title: "The Cost of Fragility: Architecting Business and Operational Resilience with SUSE Rancher"
+    speaker: Nelson Kinsford
+    abstract: >
+      Major disruptions, such as the catastrophic AWS US-EAST-1 outage and the high-profile cyberattacks on JLR and M&S, highlight the severe financial and reputational cost of IT fragility. This session, geared toward corporate business decision-makers, moves beyond the 'how' and focuses on the financial and strategic 'why' of operational resilience. We'll use these recent incidents to detail the true cost of vendor lock-in and single points of failure. Learn how a SUSE Rancher-managed multi-cloud and multi-cluster strategy transforms your IT infrastructure from a single point of failure into a powerful competitive advantage. Discover the business case for high availability (HA), swift disaster recovery (DR), and simplified, uniform security governance that protects your enterprise from the next unpredictable crisis.
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 2
+    length: 30
+    tags: ["cloud"]
+
+  - id: "BUSINESS-1242"
+    title: "Taming the Digital Beast: Mastering Software Supply Chain Resilience"
+    speaker: "Bettina Bassermann, Torsten Hallmann"
+    abstract: >
+      The digital supply chain is a crucial element of every modern business, yet it is increasingly the target of complex cyberattacks. New, stricter regulations such as the EU Cyber Resilience Act (CRA) and the Network and Information Security Directive (NIS 2) challenge companies to achieve transparency in their software supply chains and manage risks effectively. Beyond compliance, these regulations underscore the growing need for digital sovereignty, ensuring organizations maintain control over their critical technology and data assets.
+
+      This presentation offers a compact overview to help you maintain operational readiness in this new era of IT security. Learn how to identify, evaluate, and master the risks within your open-source software components. We will demonstrate the essential steps and tools—such as SBOM (Software Bill of Materials)—required to ensure compliance with the new legal requirements and guarantee the integrity of your software environment from development through to delivery. Secure your knowledge for a resilient, compliant, and digitally sovereign software future.
+    track: Business Insights
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:00"
+    room: Palmovka 3
+    length: 30
+    tags: ["digital-sovereignty", "security"]
+
+  - id: "ROADMAP-1425"
+    title: "Rancher Dev Access: How Developers are shifting secure supply chains left"
+    speaker: "Troy Topnik, François-Xavier Houard"
+    abstract: >
+      Interactive session to learn where we are headed and what defines our vision for the Developers leveraging Rancher Desktop. Exchange in live discussion thoughts and feedback directly with the Product Leadership.
+    track: Product Roadmap
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "12:30"
+    end_time: "13:15"
+    room: Palmovka 4
+    length: 45
+    tags: ["devops", "devsecops"]
+
+  - id: "CUSTOMER-1246"
+    title: How Grupo Elektra modernized its Kubernetes platform with SUSE Rancher Prime to accelerate innovation
+    speaker: "Genaro Morales, Alejandro Bonilla"
+    abstract: >
+      Grupo Elektra operates one of the most demanding financial platforms in Mexico, with mission-critical workloads that require high availability, strong operational control, and faster delivery cycles. In this interview-style session, Banco Azteca's Architecture team shares how SUSE Rancher Prime became the foundation of their Kubernetes modernization strategy, helping them standardize clusters, strengthen container security, and improve service observability. We will discuss their initial challenges, key metrics achieved, best practices adopted, and the direct impact on their daily operations. A transparent, technical, and experience-driven conversation.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Karlin 2
+    length: 30
+    tags: ["kubernetes", "microservices"]
+
+  - id: "CUSTOMER-1232"
+    title: "Hybrid HPC & Cloud-Native Workflows for AI at CSCS"
+    speaker: "Elia Oggian, Dino Conciatore, Federico Da Forno"
+    abstract: >
+      Delivering Inference as a Service on ALPS, one of the world's top supercomputers with 2688 diskless NVIDIA Grace Hopper nodes totaling more than ten thousand GPU modules, requires bridging HPC and cloud-native operations. CSCS uses SUSE Rancher Prime, SUSE Virtualization, ArgoCD, and RKE2 across a hybrid architecture combining diskless HPC nodes with SUSE Harvester VMs, enabling flexible orchestration for HPC workflows. This supports three IaaS use cases: centrally managed and versioned models, GPUs as a service via Rancher Projects, and dedicated GPU Kubernetes clusters for high-performance workloads. This approach unifies HPC and cloud-native workflows, providing a scalable inference platform that empowers researchers with on-demand GPU resources, simplified deployment, and accelerated AI experimentation.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Karlin 3
+    length: 30
+    tags: ["high-performance-computing", "ai"]
+
+  - id: "TUTORIAL-1237"
+    title: "Building Solutions: The SUSE Edge Release Process in Depth"
+    speaker: "Jiří Tomášek, Denislav Prodanov"
+    abstract: >
+      In the CI/CD landscape, promotion is a critical pattern for maintaining the quality, integrity, and reliability of software artifacts. Given the large number of components that form the robust SUSE Edge product, we rely on a systematic release pipeline to achieve this. We'll detail the process established to continuously increase confidence in artifacts by building upon the verified success of previous stages. This promotion pipeline is essential for delivering rock-solid new releases and long-term support, ensuring component compatibility and establishing a Validated Design. It enforces rigorous quality gates, leading to a reliable product baseline. We will visit key concepts such as Validated Design, Stack Validation, Release Manifest, and the Edge Release Factory.
+    track: "Technical Tutorial / \"How To\""
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Karlin 4
+    length: 30
+    tags: ["edge-computing", "automation"]
+
+  - id: "OVERVIEW-1400"
+    title: "Beyond General Support: Maximizing Stability and Compliance with SUSE LTSS"
+    speaker: Harald Müller-Ney
+    abstract: >
+      Enterprises rely on stable, predictable platforms, yet constant progress often experienced as upgrade pressure. However, upgrading a large or mission-critical infrastructure frequently can be costly and complex, often demanding extensive downtime and validation cycles.
+
+      SUSE Long-Term Support (LTS) product offerings address this challenge by providing support for SUSE Linux Enterprise Server (SLES) Service Packs and minors for 3-6 additional years after the end of General support. The presentation gives a summary of the lifecycles of SLES 15 SPx and SLES 16.x, with a focus on products related to the period after General Support. What options are available, what do they offer, and how they could fit into long-term business planning.
+    track: Product Overview
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Palmovka 1
+    length: 30
+    tags: ["enterprise-linux", "support-maintenance"]
+
+  - id: "CUSTOMER-1057"
+    title: "From Tanzu to SUSE Rancher Prime: A Seamless Migration Journey"
+    speaker: "HERNAN RIVERA MELENDREZ, Arturo Ortega, Tomas Valles"
+    abstract: >
+      A large public university modernized its container platform by migrating from VMware Tanzu to SUSE Rancher, gaining agility, transparency, and operational simplicity. Confronted with rising costs, complexity, and vendor lock-in, the IT team completed a migration covering assessment, pilot, production rollout, and optimization. This session shares practical insights and lessons learned from the journey, highlighting how Rancher enabled administrators to manage clusters more easily, developers to deploy faster, and users to experience more reliable, high-performing university services.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Palmovka 2
+    length: 30
+    tags: ["devops", "application-delivery"]
+
+  - id: "CUSTOMER-1335"
+    title: "Stable, secure, and efficient deployment and management of Kubernetes in restrictive on-premises environments"
+    speaker: Andy Wirtz
+    abstract: >
+      Organizations with strict compliance requirements often adopt a “Cluster-as-a-Service” model for Kubernetes to ensure hard isolation between workloads. While this approach satisfies auditors, it can create an operational nightmare—manual provisioning, multiple teams, and weeks of delays.
+
+      In this session, we'll share how we eliminated that bottleneck without compromising security. By combining SUSE Virtualization (Harvester), Rancher, and a GitOps-driven workflow, we transformed our platform from a 2-week, ticket-heavy process into a 15-minute, auditable git merge.
+
+      You'll learn:
+
+      - Why we rejected shared and virtual clusters in favor of physical isolation—and how we made it viable.
+
+      - How SUSE Virtualization collapsed infrastructure silos and integrated seamlessly with Rancher.
+
+      - Our best practices for IaC/GitOps
+
+      If you're struggling with Kubernetes in highly regulated, on-prem environments, this session will show you how to achieve security, speed, and operational sanity—all at once.
+    track: Customer Experience
+    day: "Thursday"
+    date: "2026-04-23"
+    time: "13:15"
+    end_time: "13:45"
+    room: Palmovka 3
+    length: 30
+    tags: ["kubernetes", "virtualization"]
