@@ -75,8 +75,8 @@ Override values for different demo scenarios:
 # Bigger bloat, longer duration (more dramatic)
 helm upgrade susecon-agent ./chart/susecon-agent \
   --namespace susecon-demo \
-  --set memoryBloat.megabytes=768 \
-  --set memoryBloat.durationSeconds=15
+  --set catalogIndex.megabytes=768 \
+  --set catalogIndex.durationSeconds=15
 
 # Tighter limit (faster crash)
 helm upgrade susecon-agent ./chart/susecon-agent \

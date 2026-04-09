@@ -18,7 +18,7 @@ agent:
   port: 8080
   # Timeout in seconds for requests to the backend
   backendTimeoutSeconds: 30
-  # Resource limits for the agent container (lightweight — no memory bloat)
+  # Resource limits for the agent container (lightweight — no catalog indexing)
   resources:
     requests:
       memory: "32Mi"
@@ -45,12 +45,12 @@ backend:
       memory: "256Mi"
       cpu: "500m"
 
-# -- Memory bloat configuration (the swap demo magic)
+# -- Session catalog index configuration (controls memory used for indexing)
 # Applied to the backend pod only.
-memoryBloat:
-  # How many MB to allocate per tool call
+catalogIndex:
+  # How many MB to allocate for the session index per tool call
   megabytes: 512
-  # How many seconds to spread the allocation over (for dramatic effect)
+  # How many seconds to spread the indexing over
   durationSeconds: 12
 
 # -- Service configuration

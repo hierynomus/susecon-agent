@@ -44,10 +44,10 @@ spec:
               value: "0.0.0.0:{{ .Values.backend.port }}"
             - name: SESSIONS_PATH
               value: "/config/sessions.yaml"
-            - name: MEMORY_BLOAT_MB
-              value: "{{ .Values.memoryBloat.megabytes }}"
-            - name: MEMORY_BLOAT_DURATION_SECS
-              value: "{{ .Values.memoryBloat.durationSeconds }}"
+            - name: CATALOG_INDEX_MB
+              value: "{{ .Values.catalogIndex.megabytes }}"
+            - name: CATALOG_INDEX_DURATION_SECS
+              value: "{{ .Values.catalogIndex.durationSeconds }}"
             - name: RUST_LOG
               value: "{{ .Values.config.logLevel }}"
           resources:

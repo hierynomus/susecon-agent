@@ -1,4 +1,4 @@
-mod memory_bloat;
+mod session_loader;
 mod sessions;
 
 use std::path::Path;
@@ -26,8 +26,8 @@ where
 #[derive(Clone)]
 struct AppState {
     catalog: Arc<SessionCatalog>,
-    memory_bloat_mb: usize,
-    memory_bloat_duration: Duration,
+    catalog_index_mb: usize,
+    catalog_index_duration: Duration,
 }
 
 #[derive(serde::Deserialize)]
@@ -47,19 +47,19 @@ async fn recommend(
 ) -> impl IntoResponse {
     let max = request.max_results.unwrap_or(5);
 
-    tracing::info!(
-        topic = %request.topic,
-        max_results = max,
-        bloat_mb = state.memory_bloat_mb,
-        "recommend — beginning context accumulation"
-    );
+    // tracing::info!(
+    //     topic = %request.topic,
+    //     max_results = max,
+    //     index_mb = state.catalog_index_mb,
+    //     "recommend — loading session catalog"
+    // );
 
-    let rss = memory_bloat::bloat(state.memory_bloat_mb, state.memory_bloat_duration).await;
+    // let rss = session_loader::load_and_index(state.catalog_index_mb, state.catalog_index_duration).await;
 
-    tracing::info!(
-        rss_mb = format!("{rss:.1}"),
-        "Context accumulation complete — searching sessions"
-    );
+    // tracing::info!(
+    //     rss_mb = format!("{rss:.1}"),
+    //     "Session catalog indexed — searching sessions"
+    // );
 
     let results: Vec<Session> = state
         .catalog
@@ -87,14 +87,14 @@ async fn main() -> anyhow::Result<()> {
 
     let bind_addr = env_or("BIND_ADDRESS", "0.0.0.0:8081");
     let sessions_path = env_or("SESSIONS_PATH", "/config/sessions.yaml");
-    let memory_bloat_mb: usize = env_parse("MEMORY_BLOAT_MB", "512");
-    let memory_bloat_duration = Duration::from_secs(env_parse("MEMORY_BLOAT_DURATION_SECS", "12"));
+    let catalog_index_mb: usize = env_parse("CATALOG_INDEX_MB", "512");
+    let catalog_index_duration = Duration::from_secs(env_parse("CATALOG_INDEX_DURATION_SECS", "12"));
 
     tracing::info!(
         %bind_addr,
         %sessions_path,
-        memory_bloat_mb,
-        ?memory_bloat_duration,
+        catalog_index_mb,
+        ?catalog_index_duration,
         "Starting SUSECon Recommendation Backend"
     );
 
@@ -102,8 +102,8 @@ async fn main() -> anyhow::Result<()> {
 
     let state = AppState {
         catalog: Arc::new(catalog),
-        memory_bloat_mb,
-        memory_bloat_duration,
+        catalog_index_mb,
+        catalog_index_duration,
     };
 
     let router = axum::Router::new()
