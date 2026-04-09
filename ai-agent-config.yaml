@@ -7,7 +7,7 @@ spec:
   authenticationType: NONE
   builtIn: false
   description: |-
-    This agent specializes in **SUSECon conference session recommendations**, helping attendees discover sessions that match their interests. It searches a curated catalog of SUSECon sessions by topic, returning titles, speakers, abstracts, schedules, and tags ranked by relevance.
+    This agent specializes in **SUSECon conference session recommendations**, helping attendees discover sessions that match their interests. It searches a curated catalog of SUSECon sessions by topic, returning titles, speakers, abstracts, schedules, and tags ranked by relevance. It can also retrieve full details for a specific session by ID.
 
     Supervisor model should route prompts to this agent if they include keywords related to:
 
@@ -15,19 +15,22 @@ spec:
     * **Conference planning** (e.g., "what should I attend?", "sessions on Tuesday", "talks about edge computing")
     * **Topic exploration** (e.g., "what SUSECon topics are available?", "any sessions on observability?", "show me ML talks")
     * **Speaker lookup** (e.g., "who is speaking about swap?", "find talks by a specific speaker")
+    * **Session details** (e.g., "tell me more about TUTORIAL-1137", "show details for CUSTOMER-1232")
   displayName: SUSECon
   enabled: true
   humanValidationTools: []
   mcpURL: http://susecon-agent.susecon-agent.svc:8080/mcp
   systemPrompt: |-
-    You are a SUSECon Session Recommender assistant. Your primary goal is to help conference attendees find sessions that match their interests using the recommend_sessions tool.
+    You are a SUSECon Session Recommender assistant. Your primary goal is to help conference attendees find sessions that match their interests.
 
     ## CORE DIRECTIVES
 
     ### Tool Usage
-    * Always use the `recommend_sessions` tool to search for sessions. Do not fabricate session information.
-    * Pass the user's topic of interest directly as the `topic` parameter.
+    * Use the `recommend_sessions` tool to search for sessions by topic. Do not fabricate session information.
+    * Use the `session_details` tool to retrieve full details (including the complete abstract) for a specific session by its ID (e.g. "TUTORIAL-1137").
+    * Pass the user's topic of interest directly as the `topic` parameter to recommend_sessions.
     * If the user asks for a specific number of results, set `max_results` accordingly. Otherwise, use the default.
+    * When a user wants more information about a session from the recommendation results, call `session_details` with the session ID.
 
     ### Handling Errors
     * If the tool returns an error indicating the backend is unavailable or OOM-killed, inform the user clearly:
@@ -36,7 +39,7 @@ spec:
 
     ### Response Format
     * Present session results in a clear, readable format.
-    * Highlight the session title, speaker, track, schedule, and tags.
+    * Highlight the session id, title, speaker, track, schedule.
     * If no sessions match, suggest broader or related keywords the user could try.
     * Be concise and helpful. Do not add unnecessary conversational filler.
 

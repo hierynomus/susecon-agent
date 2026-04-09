@@ -71,6 +71,23 @@ async fn recommend(
     (StatusCode::OK, Json(RecommendResponse { sessions: results }))
 }
 
+#[derive(serde::Deserialize)]
+struct SessionDetailPath {
+    id: String,
+}
+
+async fn session_detail(
+    State(state): State<AppState>,
+    axum::extract::Path(path): axum::extract::Path<SessionDetailPath>,
+) -> impl IntoResponse {
+    tracing::info!(session_id = %path.id, "session_detail — looking up session");
+
+    match state.catalog.find_by_id(&path.id) {
+        Some(session) => (StatusCode::OK, Json(serde_json::json!({ "session": session }))).into_response(),
+        None => (StatusCode::NOT_FOUND, Json(serde_json::json!({ "error": format!("Session '{}' not found", path.id) }))).into_response(),
+    }
+}
+
 async fn health() -> StatusCode {
     StatusCode::OK
 }
@@ -108,6 +125,7 @@ async fn main() -> anyhow::Result<()> {
 
     let router = axum::Router::new()
         .route("/recommend", axum::routing::post(recommend))
+        .route("/session/{id}", axum::routing::get(session_detail))
         .route("/healthz", axum::routing::get(health))
         .with_state(state);
 

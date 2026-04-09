@@ -48,6 +48,11 @@ impl SessionCatalog {
         Ok(catalog)
     }
 
+    pub fn find_by_id(&self, id: &str) -> Option<&Session> {
+        let id_upper = id.to_uppercase();
+        self.sessions.iter().find(|s| s.id.to_uppercase() == id_upper)
+    }
+
     pub fn recommend(&self, topic: &str, max_results: usize) -> Vec<&Session> {
         let topic_lower = topic.to_lowercase();
         let keywords: Vec<&str> = topic_lower.split_whitespace().collect();
